@@ -1,8 +1,5 @@
-INDEX VERSION 1.4+E:\BECA\ProyectoJoker\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1093331228.index
-3134823994.index
-4021868206.index
-1502307745.index
-1351047380.index
-2836235387.index
-3925366252.index
+INDEX VERSION 1.4+C:\Users\Usuario\Desktop\ProyectoJoker\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2934029384.index
+3414513473.index
+1474788830.index
+2443105941.index
