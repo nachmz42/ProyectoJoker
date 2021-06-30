@@ -1,0 +1,67 @@
+
+html{
+  /* la imagen a ser mostrada en pantalla completa */
+  background-image: url("../imagenes/portada.jpg");
+  background-repeat:repeat-x;
+  height:100%;
+  width: 100%;
+  background-size:cover;
+}
+
+.homeicon{
+  size: 100;
+  margin: left 50px;
+  font-size: large;
+  object-position: center;
+  border-radius: 30;
+}
+
+#homeicon, #AbouUs, #LogIn{
+  color: solid white;
+  font-size: x-large;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 16px;
+  border-radius: 25px;
+  box-sizing: content-box;
+}
+
+#homeicon{
+ position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+#AbouUs{
+  position: absolute;
+  top: 8px;
+  right: 200px;
+  font-size: 18px;
+}
+
+#LogIn{
+  position: absolute;
+  top: 8px;
+  right: 400px;
+  font-size: 18px;
+}
+
+
+.icono {
+  position:-webkit-sticky;
+}
+
+#cultge, #random, #rank{
+  padding: 80;
+  color: aliceblue;
+  font-size:xx-large;
+}
+
+.games{
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

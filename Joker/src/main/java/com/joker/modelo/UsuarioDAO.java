@@ -109,4 +109,10 @@ public class UsuarioDAO {
 
 	}
 
+	public Usuario login(String email, String pass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 }

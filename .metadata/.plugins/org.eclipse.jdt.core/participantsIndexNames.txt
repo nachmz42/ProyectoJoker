@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\Usuario\Desktop\ProyectoJoker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1470874346.index
+\Joker\src\main\java
