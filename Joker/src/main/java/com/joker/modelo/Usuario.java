@@ -20,7 +20,7 @@ public class Usuario {
 
 	}
 
-	public Usuario(String nombre, String apellidos, int edad, String email, String pass, String rol) {
+	public Usuario(String nombre, String apellidos, int edad, String email, String pass) {
 
 		super();
 
@@ -34,7 +34,7 @@ public class Usuario {
 
 		this.pass = pass;
 
-		this.rol = rol;
+		this.rol = "invitado";
 
 	}
 

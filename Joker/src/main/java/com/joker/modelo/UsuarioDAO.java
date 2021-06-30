@@ -19,26 +19,39 @@ public class UsuarioDAO {
 
 	private ResultSet rs;
 
-	public void altaUsuario(Usuario u) throws SQLException {
+	public boolean altaUsuario(Usuario u) {
 
 		String sql = "INSERT INTO usuarios(nombre,apellidos,edad ,email,pass) values(?,?,?,?,?) ";
 
-		con = Conexion.getInstance().getConnection();
+		try {
+			con = Conexion.getInstance().getConnection();
+			
+			pst = con.prepareStatement(sql);
 
-		pst = con.prepareStatement(sql);
+			pst.setString(1, u.getNombre());
 
-		pst.setString(1, u.getNombre());
+			pst.setString(2, u.getApellidos());
 
-		pst.setString(2, u.getApellidos());
+			pst.setInt(3, u.getEdad());
 
-		pst.setInt(3, u.getEdad());
+			pst.setString(4, u.getEmail());
 
-		pst.setString(4, u.getEmail());
+			pst.setString(5, u.getPass());
 
-		pst.setString(5, u.getPass());
+			pst.executeUpdate();
+			
+			return true;
 
-		pst.executeUpdate();
+		} catch (SQLException e) {
+			
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+			return false;
+		}
+		
 
+		
 	}
 
 	public void modificarUsuario(Usuario u) throws SQLException {
