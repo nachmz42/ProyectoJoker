@@ -1,7 +1,3 @@
 INDEX VERSION 1.131
-E:\BECA\ProyectoJoker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2421390416.index
-\Joker\src\main\java
-E:\BECA\ProyectoJoker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1017038369.index
-\primerWebProject\src\main\java
-E:\BECA\ProyectoJoker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1470874346.index
+C:\Users\Usuario\Desktop\ProyectoJoker\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1470874346.index
 \Joker\src\main\java

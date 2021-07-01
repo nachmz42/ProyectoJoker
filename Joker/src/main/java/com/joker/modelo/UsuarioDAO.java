@@ -95,7 +95,7 @@ public class UsuarioDAO {
 
 	public boolean BorrarUsuario(String email, String pass)  {
 
-		String sql = "DELETE * FROM usuarios where email=? and pass=?";
+		String sql = "DELETE  FROM usuarios where email=? and pass=?";
 
 		try {
 			con = Conexion.getInstance().getConnection();
