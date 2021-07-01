@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.4+C:\Users\Usuario\Desktop\ProyectoJoker\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2443105941.index
 1908983535.index
@@ -6,3 +7,11 @@ INDEX VERSION 1.4+C:\Users\Usuario\Desktop\ProyectoJoker\.metadata\.plugins\org.
 1502307745.index
 1470874346.index
 2934029384.index
+=======
+INDEX VERSION 1.4+E:\BECA\ProyectoJoker\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1502307745.index
+2421390416.index
+3089583922.index
+1017038369.index
+1470874346.index
+>>>>>>> 136aac97e1d055793ac81e48b0cfa87cc144c813

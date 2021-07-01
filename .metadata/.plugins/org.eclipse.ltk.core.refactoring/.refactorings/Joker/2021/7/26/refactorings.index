@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 1625153180590	Delete element
+=======
+1625147983897	Move 'formAMDPreg.html' to 'webapp'
+1625148003442	Rename resource 'formAMDPreg.html'
+1625150873660	Move 'AMDPregTabla.jsp' to 'webapp'
+1625151881475	Rename resource 'formAMDPreg.jsp'
+1625151901244	Rename resource 'form.jsp'
+>>>>>>> 136aac97e1d055793ac81e48b0cfa87cc144c813

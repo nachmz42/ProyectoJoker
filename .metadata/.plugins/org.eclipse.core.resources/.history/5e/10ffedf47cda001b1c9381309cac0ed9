@@ -1,0 +1,76 @@
+package com.joker.control;
+
+import java.io.IOException;
+import java.sql.PreparedStatement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.joker.modelo.PreguntaDAO;
+import com.joker.modelo.Pregunta;
+import com.joker.services.Conexion;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+
+
+@WebServlet("/AMDPreg")
+public class AMDPreg extends HttpServlet {
+	
+	private static final long serialVersionUID = 1L;
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String cat = request.getParameter("categoria");
+		String accion = request.getParameter("opcion");
+		int id =Integer.parseInt(request.getParameter("id"));
+		String pageDest = "";
+		PreguntaDAO pdao = new PreguntaDAO();
+		
+		if(accion.equals("mod")) {
+			pageDest="modPreg.jsp";
+		}else {
+			if(accion.equals("del")) {
+				pdao.delPregunta(id, cat);
+				pageDest="AMDPregTabla.jsp";
+			}
+		}
+		
+		
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String cat = request.getParameter("categoria");
+		String accion = request.getParameter("opcion");
+		int id =Integer.parseInt(request.getParameter("id"));
+		PreguntaDAO pdao = new PreguntaDAO();
+		Pregunta preg = new Pregunta();
+		
+		String SQL = "";
+		
+		Connection con = Conexion.getInstance().getConnection();
+		
+		if(cat.equals("c")) {
+			SQL ="Select * from categoria_cultura where id_pregunta = ?";
+		}else {if(cat.equals("m")) {
+			SQL ="Select * from categoria_maths where id_pregunta=?";
+		}else {if(cat.equals("p")) {
+			SQL ="Select * from categoria_programacion where id_pregunta=? ";
+					}
+				}
+			}
+		PreparedStatement pst = con.prepareStatement(SQL);
+		
+		ResultSet rs = pst.executeQuery();
+		
+		while(rs.next()) {
+			
+		}
+		
+		
+	}
+
+}
