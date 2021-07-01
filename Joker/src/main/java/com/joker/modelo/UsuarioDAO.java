@@ -88,17 +88,18 @@ public class UsuarioDAO {
 
 	}
 
-	public Usuario getUsuario(String email) throws SQLException {
+	public Usuario login(String email, String pass) throws SQLException {
 
 		Usuario u = null;
 
-		String sql = "SELECT * FROM where email=? ";
+		String sql = "SELECT * FROM usuarios where email=? and pass=?";
 
 		con = Conexion.getInstance().getConnection();
 
 		pst = con.prepareStatement(sql);
 
 		pst.setString(1, email);
+		pst.setString(2, pass);
 
 		rs = pst.executeQuery();
 
@@ -122,10 +123,7 @@ public class UsuarioDAO {
 
 	}
 
-	public Usuario login(String email, String pass) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 
 }

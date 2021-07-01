@@ -29,7 +29,7 @@
     <div class="icons">
         <p><button id="homeicon" ><a href="#">Home</a></button></p>
         <p><button id="AbouUs" ><a href="#">About Us</a></button></p>
-        <p><button id="Login" ><a href="#">Login</a></button></p>
+        <p><button id="Login" ><a href="login.jsp">Login</a></button></p>
         <p><button id="Resgistro" ><a href="registro.jsp">Resgistro</a></button></p>
         <%
 
