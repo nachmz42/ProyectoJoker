@@ -13,9 +13,15 @@
 <a href="modificarusuario.jsp">Modificar usuario</a><br>
 <a href="eliminarusuario.jsp">Eliminar usuario</a><br>
 <a href="AMDPregTabla.jsp">Añadir pregunta</a><br>
+<<<<<<< HEAD
 <a href="AMDPregTabla.jsp">Eliminar pregunta</a><br>
 <a href="AMDPregTabla.jsp">Modificar pregunta</a><br>
 <a href="AMDPregTabla.jsp"> Tabla ranking</a><br>
+=======
+<a href="#">Eliminar pregunta</a><br>
+<a href="#">Modificar pregunta</a><br>
+<a href="#"> Tabla ranking</a><br>
+>>>>>>> 164ed44902bedfa56e3debae75f664274d57306e
 
 
 

@@ -1,0 +1,31 @@
+
+jul 01, 2021 18:41:27.997 NEW SESSION
+jul 01, 2021 18:41:27.997 [15520:6256:0701/184127.996:ERROR:edge_auth_errors.cc(383)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+jul 01, 2021 18:41:27.997 
+jul 01, 2021 18:41:28.424 [15520:6256:0701/184128.424:ERROR:device_event_log_impl.cc(214)] [18:41:28.424] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 01, 2021 18:41:47.963 [15520:6256:0701/184147.963:ERROR:CONSOLE(1)] "Request has failed. [object Object] Thu Jul 01 2021 18:41:47 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 18:41:47.963 [15520:6256:0701/184147.963:ERROR:CONSOLE(1)] " [object Object] Thu Jul 01 2021 18:41:47 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 18:42:45.648 [4424:15944:0701/184245.648:ERROR:edge_auth_errors.cc(383)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+jul 01, 2021 18:42:45.649 
+jul 01, 2021 18:42:45.810 [4424:15944:0701/184245.809:ERROR:device_event_log_impl.cc(214)] [18:42:45.809] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 01, 2021 18:42:45.810 [4424:15944:0701/184245.809:ERROR:device_event_log_impl.cc(214)] [18:42:45.809] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 01, 2021 18:44:18.340 [11424:14256:0701/184418.340:ERROR:edge_auth_errors.cc(383)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+jul 01, 2021 18:44:18.341 
+jul 01, 2021 18:44:18.511 [11424:14256:0701/184418.511:ERROR:device_event_log_impl.cc(214)] [18:44:18.510] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 01, 2021 18:44:29.912 [11424:14256:0701/184429.912:ERROR:CONSOLE(1)] "Request has failed. [object Object] Thu Jul 01 2021 18:44:29 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 18:44:29.913 [11424:14256:0701/184429.912:ERROR:CONSOLE(1)] " [object Object] Thu Jul 01 2021 18:44:29 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 18:46:42.524 [16672:420:0701/184642.523:ERROR:edge_auth_errors.cc(383)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+jul 01, 2021 18:46:42.524 
+jul 01, 2021 18:46:42.689 [16672:420:0701/184642.688:ERROR:device_event_log_impl.cc(214)] [18:46:42.688] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 01, 2021 18:46:58.959 [16672:420:0701/184658.959:ERROR:CONSOLE(1)] "Request has failed. [object Object] Thu Jul 01 2021 18:46:58 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 18:46:58.960 [16672:420:0701/184658.959:ERROR:CONSOLE(1)] " [object Object] Thu Jul 01 2021 18:46:58 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 19:02:27.805 [10300:8748:0701/190227.804:ERROR:edge_auth_errors.cc(383)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+jul 01, 2021 19:02:27.805 
+jul 01, 2021 19:02:27.961 [10300:8748:0701/190227.960:ERROR:device_event_log_impl.cc(214)] [19:02:27.961] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 01, 2021 19:02:52.920 [10300:8748:0701/190252.919:ERROR:CONSOLE(1)] "Request has failed. [object Object] Thu Jul 01 2021 19:02:52 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 19:02:52.920 [10300:8748:0701/190252.920:ERROR:CONSOLE(1)] " [object Object] Thu Jul 01 2021 19:02:52 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 19:17:39.630 [3352:16508:0701/191739.630:ERROR:edge_auth_errors.cc(383)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+jul 01, 2021 19:17:39.630 
+jul 01, 2021 19:17:39.782 [3352:16508:0701/191739.782:ERROR:device_event_log_impl.cc(214)] [19:17:39.782] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 01, 2021 19:18:11.893 [3352:16508:0701/191811.893:ERROR:CONSOLE(1)] "Request has failed. [object Object] Thu Jul 01 2021 19:18:11 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 01, 2021 19:18:11.893 [3352:16508:0701/191811.893:ERROR:CONSOLE(1)] " [object Object] Thu Jul 01 2021 19:18:11 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
