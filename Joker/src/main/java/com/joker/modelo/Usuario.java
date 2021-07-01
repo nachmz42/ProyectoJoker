@@ -17,10 +17,11 @@ public class Usuario {
 	public Usuario() {
 
 		super();
+		this.rol = "invitado";
 
 	}
 
-	public Usuario(String nombre, String apellidos, int edad, String email, String pass) {
+	public Usuario(String nombre, String apellidos, int edad, String email, String pass, String rol) {
 
 		super();
 
@@ -36,6 +37,15 @@ public class Usuario {
 
 		this.rol = "invitado";
 
+	}
+	
+	
+	
+
+	public Usuario(String email, String pass) {
+		super();
+		this.email = email;
+		this.pass = pass;
 	}
 
 	public String getNombre() {

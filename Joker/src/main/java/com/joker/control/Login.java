@@ -42,7 +42,7 @@ public class Login extends HttpServlet {
 				
 				
 				
-				if (usu != null && ((ServletRequest) usu).getAttribute("rol").equals("admin")) {
+				if (usu.getRol().equals("admin")) {
 					
 					
 					pageDest = "admin.jsp";

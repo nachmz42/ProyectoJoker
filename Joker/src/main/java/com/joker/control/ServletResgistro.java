@@ -31,11 +31,12 @@ public class ServletResgistro extends HttpServlet {
 		String apellidos= request.getParameter("apellidos");
 		String email= request.getParameter("email");
 		String password= request.getParameter("password");
+		String rol= request.getParameter("rol");
 		String edad= request.getParameter("edad");
 		int edadNum= Integer.parseInt(edad);
 		
 		//Creamos el objeto Usuario con los dstos recuperados del formulario
-		Usuario usu= new Usuario(nombre,apellidos,edadNum,email,password);
+		Usuario usu= new Usuario(nombre,apellidos,edadNum,email,password,rol);
 		
 		UsuarioDAO usudao= new UsuarioDAO();
 		
