@@ -6,4 +6,3 @@ INDEX VERSION 1.4+C:\Users\Usuario\Desktop\ProyectoJoker\.metadata\.plugins\org.
 1470874346.index
 1908983535.index
 2443105941.index
-1470874346.index

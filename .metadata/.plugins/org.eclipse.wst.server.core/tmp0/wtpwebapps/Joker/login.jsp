@@ -14,6 +14,8 @@
 <label for="password">Password:</label>
 <input class="input" type="password"  name="password" required><br>
 <input type="submit" value="Login">
-<span style="color: red"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr") %></span>
+<span style="color: red"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr") %></span><br>
+<a href="index.jsp">Vuelta a página principal</a>
+
 </body>
 </html>

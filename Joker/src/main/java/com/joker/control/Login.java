@@ -5,12 +5,14 @@ import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.joker.control.ServletResgistro;
 import com.joker.modelo.Usuario;
 import com.joker.modelo.UsuarioDAO;
 import com.joker.modelo.Pregunta;
@@ -27,7 +29,7 @@ public class Login extends HttpServlet {
 
 		UsuarioDAO udao = new UsuarioDAO();
 		Usuario usu = null;
-		String pageDest = "index.jsp";
+		String pageDest = "login.jsp";
 
 		try {
 			usu = udao.login(email, pass);
@@ -35,15 +37,39 @@ public class Login extends HttpServlet {
 			
 			// usuario existe en la BDD
 		
+			
 			if (usu != null) {
-				pageDest = "usuarios.jsp";
-				HttpSession sesion = request.getSession();
-				sesion.setAttribute("nombre", usu.getNombre());
-				sesion.setAttribute("apellido", usu.getApellidos());
-				sesion.setAttribute("edad", usu.getEdad());
-				sesion.setAttribute("email", usu.getEmail());
-				sesion.setAttribute("rol", usu.getRol());
 				
+				
+				
+				if (usu != null && ((ServletRequest) usu).getAttribute("rol").equals("admin")) {
+					
+					
+					pageDest = "admin.jsp";
+					HttpSession sesion = request.getSession();
+					sesion.setAttribute("nombre", usu.getNombre());
+					sesion.setAttribute("apellido", usu.getApellidos());
+					sesion.setAttribute("edad", usu.getEdad());
+					sesion.setAttribute("email", usu.getEmail());
+					sesion.setAttribute("rol", usu.getRol());
+					
+					
+				}else {
+					
+					pageDest = "usuarios.jsp";
+					HttpSession sesion = request.getSession();
+					sesion.setAttribute("nombre", usu.getNombre());
+					sesion.setAttribute("apellido", usu.getApellidos());
+					sesion.setAttribute("edad", usu.getEdad());
+					sesion.setAttribute("email", usu.getEmail());
+					sesion.setAttribute("rol", usu.getRol());
+					
+				
+				
+				
+				
+				
+			}
 			}
 
 				else {
@@ -54,7 +80,8 @@ public class Login extends HttpServlet {
 				}
 			
 			
-		} catch (SQLException e) {
+		
+		}catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
