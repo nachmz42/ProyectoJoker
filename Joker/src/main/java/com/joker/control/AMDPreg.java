@@ -12,12 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.joker.modelo.PreguntaDAO;
 import com.joker.modelo.Pregunta;
-import com.joker.services.Conexion;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.ResultSet;
+
+
 
 
 @WebServlet("/AMDPreg")
@@ -28,15 +25,17 @@ public class AMDPreg extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String cat = request.getParameter("categoria");
 		String accion = request.getParameter("opcion");
-		int id =Integer.parseInt(request.getParameter("id"));
+		int id2 =Integer.parseInt(request.getParameter("id"));
+		String id = request.getParameter("id");
 		String pageDest = "";
 		PreguntaDAO pdao = new PreguntaDAO();
-		
+		request.setAttribute("id", id);
+		request.setAttribute("categoria", cat);
 		if(accion.equals("mod")) {
 			pageDest="formModPreg.jsp";
 		}else {
 			if(accion.equals("del")) {
-				pdao.delPregunta(id, cat);
+				pdao.delPregunta(id2, cat);
 				pageDest="AMDPregTabla.jsp";
 			}
 		}
@@ -80,6 +79,8 @@ public class AMDPreg extends HttpServlet {
 			String rsc = request.getParameter("rsc");
 			preg = new Pregunta(pregunta,rs1,rs2,rs3,rs4,rsc,id);
 			pdao.altaPregunta(preg, cat);
+			RequestDispatcher rd = request.getRequestDispatcher(pageDest);
+			rd.forward(request, response);
 			
 			}
 			

@@ -12,7 +12,7 @@
 <a href="añadirusuario.jsp">Añadir usuario</a><br>
 <a href="modificarusuario.jsp">Modificar usuario</a><br>
 <a href="eliminarusuario.jsp">Eliminar usuario</a><br>
-<a href="#">Añadir pregunta</a><br>
+<a href="AMDPregTabla.jsp">Añadir pregunta</a><br>
 <a href="#">Eliminar pregunta</a><br>
 <a href="#">Modificar pregunta</a><br>
 <a href="#"> Tabla ranking</a><br>

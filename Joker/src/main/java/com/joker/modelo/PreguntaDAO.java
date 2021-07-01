@@ -29,6 +29,7 @@ public class PreguntaDAO {
 			pst.setString(6, preg.getRsc());
 			pst.setInt(7, preg.getId());
 			
+			pst.executeUpdate();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -52,6 +53,7 @@ public class PreguntaDAO {
 				}
 		PreparedStatement pst = con.prepareStatement(SQL);
 		pst.setInt(1,id);
+		pst.executeUpdate();
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
