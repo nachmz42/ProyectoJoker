@@ -18,14 +18,10 @@
 		<input type="text" name="rs4" placeholder="Respuesta 4..."><br>
 		<label>Respuesta Correcta</label>
 		<input type="text" name="rsc" placeholder="Respuesta Correcta..."><br>
-<<<<<<< HEAD
-		<input type="hidden" op = "m">
-=======
 		<input type="hidden" name = "op" value="m">
 		<input type="hidden" name = "id" value= <%= request.getAttribute("id") %>>
 		<input type="hidden" name = "categoria" value= <%= request.getAttribute("categoria") %>>
 		<input type="submit" value="SUBMITTTTTTTTT">
->>>>>>> 164ed44902bedfa56e3debae75f664274d57306e
 	</form>
 </body>
 </html>

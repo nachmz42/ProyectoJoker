@@ -1,40 +1,49 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="STYLE/css/modificarusuario.css"></link>
+
 </head>
 <body>
 
-<div>
-  <form action="/Joker/ServletModificarusuario" method="post"><br>
-  
-  	<label for="email">Introduzca email del usuario que desea modificar</label>
-    <input type="email" id="email" name="email" placeholder="Email ..." required><br>
-    
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre ..." required><br>
-   
-    <label for="apellidos">Apellidos</label>
-    <input type="text" id="apellidos" name="apellidos" placeholder="Tus Apellidos ..."  required><br>
-   
+	<div class="testbox">
 
-    <label for="edad">Edad</label>
-    <input type="text" id="edad" name="edad" placeholder="Tu edad ..." required><br>
-    
-    <label for="password">Password</label>
-    <input type="text" id="password" name="password" placeholder="Password ..." required>  <br>
-  
-    <label for="rol">Rol</label>
-    <input type="text" id="rol" name="rol" placeholder="Admin/invitado" required>  <br>
-   
-  
-    <input type="submit" value="Enviar"><br>
-    <input type="reset" value="Borrar"><br>
-  </form>
-</div>
+		<form action="/Joker/ServletModificarusuario" method="post">
+			<br>
+
+
+			<h2>Modificar usuario</h2>
+			<div class="form2" style="">
+
+
+				<label for="email" id="1">Email</label><br> <input type="email"
+					id="email" name="email"
+					placeholder="Email del usuario que desea modificar" required> <i
+					class="icon-user"></i><br> <label for="password" id="1">Password</label><br>
+				<input type="text" id="password" name="password"
+					placeholder="Password ..." required> <br> <label
+					for="nombre" id="1">Nombre</label><br> <input type="text"
+					id="nombre" name="nombre" placeholder="Tu Nombre ..." required><br>
+
+				<label for="apellidos">Apellidos</label><br> <input
+					type="text" id="apellidos" name="apellidos"
+					placeholder="Tus Apellidos ..." required><br> <label
+					for="edad" id="1">Edad</label><br> <input type="text"
+					id="edad" name="edad" placeholder="Tu edad ..." required><br>
+
+				 <label for="rol" id="1">
+					Rol</label><br> <input type="text" id="rol"
+					name="rol" placeholder="Admin/invitado" required> <br>
+
+
+				<input type="submit" value="Enviar"><br> <input
+					type="reset" value="Borrar"><br>
+			</div>
+	</div>
 
 </body>
 </html>

@@ -29,3 +29,15 @@ jul 01, 2021 19:17:39.630
 jul 01, 2021 19:17:39.782 [3352:16508:0701/191739.782:ERROR:device_event_log_impl.cc(214)] [19:17:39.782] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
 jul 01, 2021 19:18:11.893 [3352:16508:0701/191811.893:ERROR:CONSOLE(1)] "Request has failed. [object Object] Thu Jul 01 2021 19:18:11 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
 jul 01, 2021 19:18:11.893 [3352:16508:0701/191811.893:ERROR:CONSOLE(1)] " [object Object] Thu Jul 01 2021 19:18:11 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+
+jul 02, 2021 10:03:50.798 NEW SESSION
+jul 02, 2021 10:03:50.798 [896:8968:0702/100350.796:ERROR:device_event_log_impl.cc(214)] [10:03:50.796] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 02, 2021 10:03:50.799 [896:8968:0702/100350.796:ERROR:device_event_log_impl.cc(214)] [10:03:50.797] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 02, 2021 10:03:56.792 [896:8968:0702/100356.791:ERROR:CONSOLE(1)] "Request has failed. [object Object] Fri Jul 02 2021 10:03:56 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 02, 2021 10:03:56.793 [896:8968:0702/100356.792:ERROR:CONSOLE(1)] " [object Object] Fri Jul 02 2021 10:03:56 GMT+0200 (hora de verano de Europa central)", source: https://assets.msn.com/bundles/v1/edgeChromium/latest/vendors.8d66af85a82684520da0.js (1)
+jul 02, 2021 13:38:22.370 [268:11012:0702/133822.367:ERROR:device_event_log_impl.cc(214)] [13:38:22.368] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 02, 2021 13:38:22.372 [268:11012:0702/133822.369:ERROR:device_event_log_impl.cc(214)] [13:38:22.369] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+jul 02, 2021 13:42:00.590 NEW SESSION
+jul 02, 2021 13:42:00.590 [7204:2400:0702/134200.585:ERROR:device_event_log_impl.cc(214)] [13:42:00.586] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jul 02, 2021 13:42:00.595 [7204:2400:0702/134200.586:ERROR:device_event_log_impl.cc(214)] [13:42:00.587] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
