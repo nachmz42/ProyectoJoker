@@ -1,7 +1,0 @@
-INDEX VERSION 1.131+C:\Users\Usuario\Desktop\ProyectoJoker\.metadata\.plugins\org.eclipse.jdt.core
-2216919105.index
-2507552553.index
-2353577068.index
-3377732973.index
-1502307745.index
-356374187.index
