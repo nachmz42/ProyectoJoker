@@ -73,3 +73,7 @@ input[type=reset] {
     width: 350px;
     margin-left: 50px;
 }
+
+body {
+	background-color: #ABB2B9 ;
+}

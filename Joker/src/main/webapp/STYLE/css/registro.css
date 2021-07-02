@@ -48,7 +48,8 @@ input[type=reset] {
 
 
 .testbox {
-	margin: 30px auto;
+	margin-top: 70px;
+	margin-left:500px;
 	width: 400px;
 	height: 600px;
 	-webkit-border-radius: 50px/30px;
@@ -71,4 +72,8 @@ input[type=reset] {
     Text-align: left;
     width: 350px;
     margin-left: 50px;
+}
+
+body {
+	background-color: #ABB2B9 ;
 }
