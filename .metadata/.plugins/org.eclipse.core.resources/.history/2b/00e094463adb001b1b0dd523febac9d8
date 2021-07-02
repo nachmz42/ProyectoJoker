@@ -36,7 +36,6 @@ input[type=submit] {
 
 
 .testbox {
-	padding-left: 5px;
 	margin-top: 250px;
 	margin-left: 500px;
 	
@@ -61,5 +60,5 @@ input[type=submit] {
 .form2 {
     Text-align: left;
     width: 400x;
-    margin-left: 50px;
+    margin-left: 100px;
 }

@@ -61,5 +61,5 @@ input[type=submit] {
 .form2 {
     Text-align: left;
     width: 400x;
-    margin-left: 50px;
+    margin-left: 100px;
 }
