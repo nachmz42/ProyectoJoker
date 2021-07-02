@@ -57,6 +57,7 @@
         <div class="cara" id="inferior"></div>
     </div>
 
+	
    
   <div class="games" ><br>
   	  <img src="STYLE/imagenes/games.jpg" class="center-img" >
