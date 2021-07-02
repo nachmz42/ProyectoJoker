@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Joker</title>
-<link rel="stylesheet" href="/STYLE/css/welcomepage.css">
+<link rel="stylesheet" href="STYLE/css/welcomepage.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -42,7 +42,7 @@
         </div>
       </li>
       <li id="aboutus"><a href="#">About Us</a></li>
-      <li id="login"><a href="#">Login</a></li>
+      <li id="login"><a href="login.jsp">Login</a></li>
       <li id="registro"><a href="registro.jsp">Registro</a></li>
     </ul>
   </div>
@@ -57,7 +57,7 @@
         <div class="cara" id="inferior"></div>
     </div>
 
-	<h2 id="SMT">funciona por favor!</h2>
+	
    
   <div class="games" ><br>
   	  <img src="STYLE/imagenes/games.jpg" class="center-img" >
