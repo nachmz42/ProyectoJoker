@@ -5,17 +5,25 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="STYLE/css/login.css"></link>
 </head>
 <body>
-<h1> Formulario</h1>
+<div class= "testbox">
+<h1> Login</h1>
 <form action="Login"  method="post">
-<label for="email">Email:</label>
+<div class="form2" style="">
+<label for="email">Email:</label><br>
 <input class="input" type="email"  name="email" required><br>
-<label for="password">Password:</label>
-<input class="input" type="password"  name="password" required><br>
+<label for="password">Password:</label><br>
+<input class="input" type="text"  name="password" required><br>
 <input type="submit" value="Login">
 <span style="color: red"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr") %></span><br>
-<a href="index.jsp">Vuelta a página principal</a>
+<a href="registro.jsp">Registrarse</a><br>
+</div>
+
+</form>
+</div>
+
 
 </body>
 </html>

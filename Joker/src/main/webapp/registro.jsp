@@ -5,32 +5,36 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Registro</title>
-<link rel="stylesheet" href="STYLE/css/formularios.css"></link>
+<link rel="stylesheet" href="STYLE/css/registro.css"></link>
 
 </head>
 <body>
-<h3>Registro</h3>
 
-<div>
+<div class= "testbox">
+<h2>Registro</h2>
+
+<div class="form2">
   <form action="/Joker/ServletResgistro" method="post">
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre ...">
+    <label for="nombre">Nombre</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre ..."><br>
 
-    <label for="apellidos">Apellidos</label>
-    <input type="text" id="apellidos" name="apellidos" placeholder="Tus Apellidos ...">
+    <label for="apellidos">Apellidos</label><br>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Tus Apellidos ..."><br>
 
-    <label for="edad">Edad</label>
-    <input type="text" id="edad" name="edad" placeholder="Tu edad ...">
+    <label for="edad">Edad</label><br>
+    <input type="text" id="edad" name="edad" placeholder="Tu edad ..."><br>
     
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email ...">
-    
-    <label for="password">Pasword</label>
-    <input type="text" id="password" name="password" placeholder="Password ...">   
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Email ..."><br>
+    <br>
+    <label for="password">Password</label><br>
+    <input type="text" id="password" name="password" placeholder="Password ...">  <br>
   
     <input type="submit" value="Enviar"><br>
     <input type="reset" value="Borrar"><br>
   </form>
+</div>
+
 </div>
 </body>
 </html>
