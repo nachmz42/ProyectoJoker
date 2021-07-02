@@ -34,7 +34,7 @@
           <div class="dropdown">
             <button class="dropbtn">A JUGAR !</button>
               <div class="dropdown-content">
-                <a href="#">CATEGORIAS</a>
+                <a href="culturaGeneral.jsp">CATEGORIAS</a>
                 <a href="#">RANDOM QUIZ</a>
                 <a href="#">RANKING</a>
               </div>
@@ -42,7 +42,7 @@
         </div>
       </li>
       <li id="aboutus"><a href="#">About Us</a></li>
-      <li id="login"><a href="#">Login</a></li>
+      <li id="login"><a href="login.jsp">Login</a></li>
       <li id="registro"><a href="registro.jsp">Registro</a></li>
     </ul>
   </div>

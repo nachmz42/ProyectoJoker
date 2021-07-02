@@ -3,6 +3,7 @@ package com.joker.modelo;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import com.joker.services.Conexion;
 
@@ -54,6 +55,31 @@ public class PreguntaDAO {
 		PreparedStatement pst = con.prepareStatement(SQL);
 		pst.setInt(1,id);
 		pst.executeUpdate();
+		String sql1 ="";
+		String sql2 ="";
+		String sql3 ="";
+		
+		
+		if(opcion.equals("m")) {
+			sql1 ="ALTER TABLE `categoria_cultura` DROP `id_pregunta`";
+			sql2 ="ALTER TABLE `categoria_cultura` AUTO_INCREMENT = 1";
+			sql3 ="ALTER TABLE `categoria_cultura` ADD `id_pregunta` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST";
+		}else {if(opcion.equals("c")) {
+			sql1 ="ALTER TABLE `categoria_maths` DROP `id_pregunta`";
+			sql2 ="ALTER TABLE `categoria_maths` AUTO_INCREMENT = 1";
+			sql3 ="ALTER TABLE `categoria_maths` ADD `id_pregunta` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST";
+		}else {if(opcion.equals("p")) {
+			sql1 ="ALTER TABLE `categoria_programacion` DROP `id_pregunta`";
+			sql2 ="ALTER TABLE `categoria_programacion` AUTO_INCREMENT = 1";
+			sql3 ="ALTER TABLE `categoria_programacion` ADD `id_pregunta` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST";
+					}
+				}
+			}
+		Statement st = con.createStatement();
+		st.executeUpdate(sql1);
+		st.executeUpdate(sql2);
+		st.executeUpdate(sql3);
+		
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -89,4 +115,17 @@ public class PreguntaDAO {
 		
 		
 	}
+	
+	public Boolean check(int[] arr, int toCheckValue)
+    {
+
+        boolean test = false;
+        for (int element : arr) {
+            if (element == toCheckValue) {
+                test = true;
+                break;
+            }
+        }
+        return test;
+    }
 }
