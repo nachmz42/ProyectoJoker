@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.joker.services.Conexion"/>
-    <fullyQualifiedTypeName name="com.joker.modelo.Usuario"/>
-    <fullyQualifiedTypeName name="com.joker.modelo.UsuarioDAO"/>
-</qualifiedTypeNameHistroy>
