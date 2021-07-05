@@ -1,79 +1,171 @@
-@charset "ISO-8859-1";
 
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
 
-
-input[type=text], select {
-	width: 75%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
-input[type=email], select {
-	width: 75%;
-	padding: 9px 12px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
-input[type=submit] {
-	width: 50%;
-	background-color: #4CAF50;
-	color: white;
-	padding: 8px 0px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	Text-align: center;
-}
-
-input[type=reset] {
-	width: 50%;
-	background-color: #FFD333;
-	color: white;
-	padding: 8px 0px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	Text-align: center;
-}
-
-
-.testbox {
-	margin-top: 70px;
-	margin-left:500px;
-	width: 400px;
-	height: 600px;
-	-webkit-border-radius: 50px/30px;
-	-moz-border-radius: 50px/30px;
-	border-radius: 50px/30px;
-	background-color: #ebebeb;
-	-webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
-	-moz-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
-	box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
-	border: solid 3px #cbc9c9;
-	Text-align: center;
-	 font: oblique bold 100% cursive;
-}
-
-
-
-
-
-.form2 {
-    Text-align: left;
-    width: 350px;
-    margin-left: 50px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-	background-color: #ABB2B9 ;
+background-image: linear-gradient(to top, #3da7a1 0%, #e0b9c5 100%);
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+
+}
+
+form {
+    align-items: center;
+    width: 35%;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #aac3c7 50%, #c4a0b2 50%);
+}
+
+
+form .container {
+    width: 35%;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+}
+
+
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: hsl(0, 0%, 99%);
+}
+
+
+
+.input-item {
+    background: #fff;
+    color: rgb(75, 46, 46);
+    padding: 14.5px 0px 15px 9px;
+    align-items: center;
+}
+
+
+input[class="form-input"]{
+    width:60%;
+    height: 2%;
+
+    margin-top: 2%;
+    padding: 10px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 20px 20px 20px 20px;
+    transition: 0.2s linear;
+    display: inline;
+    align-items: center;
+    
+}
+
+
+input[id="txt-input"] {
+	font-family: 'Playfair Display', serif;
+	width: 360px;
+	}
+
+
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+    width: 280px;
+    height: 50px;
+}
+
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 100%;
+    height: 50px;
+  
+    padding: 0 20px;
+    border-radius: 20px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.02em;
+}
+
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+    color: #8e5e75;
+}
+
+
+
+.registrar {
+	background: #ebbdec;
+	margin-buttom: 50%;}
+
+.sborrar{
+	background: #258585;
+	margin-top: 10%;
+	}
+
+
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+a:link{
+	text-decoration: none;
+	color: #bb86b6;
+}
+a:hover{
+	color:white;
+}
+
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
 }

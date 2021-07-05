@@ -6,35 +6,45 @@
 <meta charset="ISO-8859-1">
 <title>Registro</title>
 <link rel="stylesheet" href="STYLE/css/registro.css"></link>
+<link rel="stylesheet" href="STYLE/css/login.js"></link>
 
 </head>
 <body>
 
-<div class= "testbox">
-<h2>Registro</h2>
+<div class="registro">
+ 
+<form>
+  <div class="registt">
+   <div class="Container">
+   <header class="head-form">
+      <h2>Registro</h2>
+   </header>
 
-<div class="form2">
-  <form action="/Joker/ServletResgistro" method="post">
-    <label for="nombre">Nombre</label><br>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre ..."><br>
-
-    <label for="apellidos">Apellidos</label><br>
-    <input type="text" id="apellidos" name="apellidos" placeholder="Tus Apellidos ..."><br>
-
-    <label for="edad">Edad</label><br>
-    <input type="text" id="edad" name="edad" placeholder="Tu edad ..."><br>
+   <br>
+   <div class="field-set">
+ 
+      <input class="form-input" id="txt-input" type="text" placeholder="Nombre" name="nombre">
+     
+      <br>
     
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" placeholder="Email ..."><br>
-    <br>
-    <label for="password">Password</label><br>
-    <input type="text" id="password" name="password" placeholder="Password ...">  <br>
-  
-    <input type="submit" value="Enviar"><br>
-    <input type="reset" value="Borrar"><br>
-  </form>
-</div>
+      <input class="form-input" id="txt-input" type="text" placeholder="Apellidos"   name="apellidos">
+      <br>
 
-</div>
+      <input class="form-input" id="txt-input" type="number" placeholder="Edad"   name="edad">
+      <br>
+    
+      <input class="form-input" id="txt-input" type="email" placeholder="Email"   name="email">
+      <br>
+    
+      <input class="form-input" id="txt-input" type="password" placeholder="Password"   name="password">
+      <br>
+      <button class="btn submits registrar" value="Enviar"> Registratrse </button>
+  
+      <button class="btn submits borrar" value="Borrar">Borrar</button>
+   </div>
+  </div>
+  </div>
+</form>
+
 </body>
 </html>

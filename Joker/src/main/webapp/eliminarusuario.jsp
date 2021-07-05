@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Eliminar Usuario</title>
 <link rel="stylesheet" href="STYLE/css/eliminarusuario.css"></link>
 </head>
 <body>
