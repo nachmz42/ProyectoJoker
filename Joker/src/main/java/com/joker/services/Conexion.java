@@ -11,7 +11,7 @@ public class Conexion {
     private Connection connection;
     private String url = "jdbc:mysql://localhost:3306/proyectojoker?serverTimezone=UTC";
     private String username = "root";
-    private String password = "Mariam1998";
+    private String password = "1234";
 
     private Conexion() throws SQLException {
         try {
