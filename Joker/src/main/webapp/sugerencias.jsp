@@ -6,32 +6,16 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" href="STYLE/css/sugerencias.css"></link>
 <body>
-<h1>Sugerencias</h1>
-  	<form action="/Joker/ServletSugerencias" method="post"><br>
-  
-    
-    <label for="nombre" id="1">Nombre</label><br>
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre"  required><br>
-    
-    <label for="nombre" id="1">Apellidos</label><br>
-    <input type="text" id="apellidos" name="apellidos" placeholder="Nombre"  required><br>
-    
-    <label for="email" id="1">Email</label><br>
-    <input type="email" id="email" name="email" placeholder="Email del usuario que desea eliminar"  required><br>
-    
-    <label for="nombre" id="1">Sugerencia</label><br>
-    <input type="text" id="sugerencia" name="sugerencia" placeholder="Nombre"  required><br>
-     
- 
-    
-   
-  
-   
-    <input type="submit" value="Enviar"><br>
-    <input type="reset" value="Borrar"><br>
-   
-  </form>
+    <form class="form">
+          <div class="container">
+        <div class="pageTitle title">Sugerencias</div>
+        <div class="secondaryTitle title">Bienvenido al formulario de sugerencias</div>
+         <textarea class="message formEntry" placeholder="Escriba aqui su sugerencia..."></textarea>
+         <button class="submit formEntry" onclick="thanks()"><a href="usuario.jsp">Submit</a></button>
+        </div>
+    </form>
 
 </body>
 </html>

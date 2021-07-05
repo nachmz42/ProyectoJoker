@@ -5,8 +5,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
-<link rel="stylesheet" href="STYLE/css/login.css"></link>
 </head>
+<link rel="stylesheet" href="STYLE/css/login.css"></link>
 
 <body >
 
@@ -28,18 +28,8 @@
 
 	</form>
 
-<<<<<<< HEAD
 
 
 </body>
 
-
-
-</body>
-
-=======
-</body>
-
-
->>>>>>> 926db98652f8fe4d52fbbeeb9aa77deb6def354a
 </html>
