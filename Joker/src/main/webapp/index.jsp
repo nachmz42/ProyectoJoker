@@ -1,13 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Joker</title>
 <link rel="stylesheet" href="STYLE/css/welcomepage.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
 </head>
 <body>
 <header>
@@ -29,17 +34,16 @@
   <div class="full-page-green"></div>
   <div class="ham-menu">
     <ul class="centre-text bold-text">
+        <li class="dropdown">
+            <button class="dropbtn">Juegos</button>
+                <div class="dropdown-content">
+                    <a href="categorias.jsp">Categorias</a> 
+                    <a href="#">Random Quiz</a>
+                    <a href="#">Ranking</a>
+                </div>
+        </li>
       <li id="home"><a href="index.jsp">Home</a>
-        <li><div class="icono">
-          <div class="dropdown">
-            <button class="dropbtn">A JUGAR !</button>
-              <div class="dropdown-content">
-                <a href="culturaGeneral.jsp">CATEGORIAS</a>
-                <a href="#">RANDOM QUIZ</a>
-                <a href="#">RANKING</a>
-              </div>
-            </div>
-        </div>
+         
       </li>
       <li id="aboutus"><a href="#">About Us</a></li>
       <li id="login"><a href="login.jsp">Login</a></li>
@@ -58,10 +62,17 @@
     </div>
 
 	
-   
-  <div class="games" ><br>
-  	  <img src="STYLE/imagenes/games.jpg" class="center-img" >
-	</div><br>
+  
+        <h1 class="games">
+            <span>G</span>
+            <span>A</span>
+            <span>M</span>
+            <span>E</span>
+            <span>S</span>
+           
+          </h1>
+       
+    
 	
 	<div class="footer">
 	 <h2 id="SMT">Our Social Media</h2>
@@ -75,7 +86,5 @@
   
   
   
-  
-  <script src ="STYLE/js/welcome.js"></script>
 </body>
 </html>
