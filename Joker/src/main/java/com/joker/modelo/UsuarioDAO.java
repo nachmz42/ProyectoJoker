@@ -153,6 +153,40 @@ public class UsuarioDAO {
 		return u;
 
 	}
+	
+	public boolean Sugerencia(String nombre, String apellidos, String email, String sugerencia) {
+
+		String sql = "INSERT INTO sugerencias (nombre,apellidos,email,sugerencia) values(?,?,?,?) ";
+		
+
+		try {
+			con = Conexion.getInstance().getConnection();
+			
+			pst = con.prepareStatement(sql);
+
+			pst.setString(1,nombre);
+
+			pst.setString(2, apellidos);
+
+			pst.setString(3, email);
+			
+			pst.setString(4, sugerencia);
+
+			pst.executeUpdate();
+			
+			return true;
+
+		} catch (SQLException e) {
+			
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+			return false;
+		}
+		
+
+		
+	}
 
 
 

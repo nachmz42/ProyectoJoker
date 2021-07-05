@@ -8,20 +8,12 @@
 </head>
 <body>
 <h1>Sugerencias</h1>
-  	<form action="/Joker/ServletSugerencias" method="post"><br>
+  	<form action="/Joker/ServletSugerencia" method="post"><br>
   
     
-    <label for="nombre" id="1">Nombre</label><br>
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre"  required><br>
-    
-    <label for="nombre" id="1">Apellidos</label><br>
-    <input type="text" id="apellidos" name="apellidos" placeholder="Nombre"  required><br>
-    
-    <label for="email" id="1">Email</label><br>
-    <input type="email" id="email" name="email" placeholder="Email del usuario que desea eliminar"  required><br>
     
     <label for="nombre" id="1">Sugerencia</label><br>
-    <input type="text" id="sugerencia" name="sugerencia" placeholder="Nombre"  required><br>
+    <input type="text" id="sugerencia" name="sugerencia" placeholder="Introduzca sugerencia"  required><br>
      
  
     
