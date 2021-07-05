@@ -1,6 +1,8 @@
 package com.joker.control;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -83,6 +85,10 @@ public class ServletCategorias extends HttpServlet {
 			}
 		}
 		pdao.rankear(email,nombre,cat,ape,puntuacion,tiempo);
+		RequestDispatcher rd = request.getRequestDispatcher("ranking.jsp");
+		rd.forward(request, response);
+		
+		
 	}
 	
 	
