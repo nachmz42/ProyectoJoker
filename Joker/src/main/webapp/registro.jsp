@@ -6,14 +6,11 @@
 <meta charset="ISO-8859-1">
 <title>Registro</title>
 <link rel="stylesheet" href="STYLE/css/registro.css"></link>
-<link rel="stylesheet" href="STYLE/css/login.js"></link>
-
 </head>
 <body>
 
-<div class="registro">
  
-<form>
+<form action="/Joker/ServletResgistro" method="post">
   <div class="registt">
    <div class="Container">
    <header class="head-form">
@@ -23,20 +20,20 @@
    <br>
    <div class="field-set">
  
-      <input class="form-input" id="txt-input" type="text" placeholder="Nombre" name="nombre">
+      <input class="campos" id="txt-input" type="text" placeholder="Nombre" name="nombre">
      
       <br>
     
-      <input class="form-input" id="txt-input" type="text" placeholder="Apellidos"   name="apellidos">
+      <input class="campos" id="txt-input" type="text" placeholder="Apellidos"   name="apellidos">
       <br>
 
-      <input class="form-input" id="txt-input" type="number" placeholder="Edad"   name="edad">
+      <input class="campos" id="txt-input" type="number" placeholder="Edad"   name="edad">
       <br>
     
-      <input class="form-input" id="txt-input" type="email" placeholder="Email"   name="email">
+      <input class="campos" id="txt-input" type="email" placeholder="Email"   name="email">
       <br>
     
-      <input class="form-input" id="txt-input" type="password" placeholder="Password"   name="password">
+      <input class=campos id="txt-input" type="password" placeholder="Password"   name="password">
       <br>
       <button class="btn submits registrar" value="Enviar"> Registratrse </button>
   
@@ -45,6 +42,7 @@
   </div>
   </div>
 </form>
+
 
 </body>
 </html>
