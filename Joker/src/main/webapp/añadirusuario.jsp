@@ -9,12 +9,19 @@
 </head>
 <body>
 
+<div class="encabezado">
+<div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
+<div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
+<div class="admin">AD</div>
+</div>
+<div class= "cuerpo">
 <div class= "testbox">
+
 	
 	<h1>Alta usuario</h1>
   	<form action="/Joker/ServletAltausuario" method="post"><br>
   
-  	<div class="form2" style="">
+  	<div class="form2" >
     <label for="nombre" id="1">Nombre</label><br>
     <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre ..."  required><br>
    
@@ -44,6 +51,8 @@
   </form>
    
 </div>
+</div>
+
 
 </body>
 </html>

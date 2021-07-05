@@ -8,18 +8,17 @@
 <link rel="stylesheet" href="STYLE/css/admin.css"></link>
 </head>
 <body>
-<h1>Área Admin</h1>
-
-<a href="añadirusuario.jsp"><label id="1">Añadir usuario</label></a><br>
-<a href="modificarusuario.jsp"><label id="2">Modificar usuario</label></a><br>
-<a href="eliminarusuario.jsp"><label id="3">Eliminar usuario</label></a><br>
-<a href="AMDPregTabla.jsp"><label id="4">Añadir/Eliminar/Modificar pregunta</label></a><br>
-
-
-
-
-
-
+<div class="encabezado">
+<div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
+<div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
+<div class="admin">AD</div>
+</div>
+<div class="cuerpo">
+<div class="admin1"><a style="text-decoration:none; color:black"  href="añadirusuario.jsp">Añadir usuario</a></div><br>
+<div class="admin2"><a style="text-decoration:none; color:black"  href="modificarusuario.jsp">Modificar usuario</a></div><br>
+<div class="admin2"><a style="text-decoration:none; color:black" href="eliminarusuario.jsp">Eliminar usuario</a></div><br>
+<div class="admin2"><a style="text-decoration:none; color:black" href="AMDPregTabla.jsp">Añadir/Eliminar/Modificar pregunta</a></div><br>
+</div>
 
 </body>
 </html>

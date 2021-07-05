@@ -5,9 +5,20 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="STYLE/css/usuario.css"></link>
 </head>
 <body>
-<h1>Buenos días compis</h1>
+<div class="encabezado">
+<div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
+<div class="logout"><a style="text-decoration:none; color:black" href="logout">Logout</a></div>
+<div class="admin">USER</div>
+</div>
+<div class="cuerpo">
+ <div class="user1"><a style="text-decoration:none; color:black"  href="categorias.css">CATEGORÍAS</a></div>
+<div class="user2"><a style="text-decoration:none; color:black"  href="#">RANDOM QUIZ</a></div>
+<div class="user3"><a style="text-decoration:none; color:black" href="#">RANKING</a></div>
+<div class="user4"><a style="text-decoration:none; color:black" href="#">SUGERENCIAS</a></div>
+</div>
 
 </body>
 </html>
