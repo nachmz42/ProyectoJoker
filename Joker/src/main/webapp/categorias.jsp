@@ -23,8 +23,7 @@
 
 	<div class="container">
 		<div class="box">
-			<a href="#"><img src="STYLE/imagenes/cultgeneral.jpg"></a> <span>Cultura
-				General</span>
+			<a href="#"><img src="STYLE/imagenes/cultgeneral.jpg"></a> <span>Cultura General</span>
 		</div>
 		<div class="box">
 			<a href="#"><img src="STYLE/imagenes/mates.jpg"></a> <span>Special
