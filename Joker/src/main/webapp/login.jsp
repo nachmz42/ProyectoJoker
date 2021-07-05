@@ -18,7 +18,7 @@
 <input class="input" type="text"  name="password"  placeholder="Password.."required><br>
 <input type="submit" value="Login">
 <span style="color: red"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr") %></span><br>
-<a href="registro.jsp">Registrarse</a><br>
+<a style="text-decoration:none; color:black" href="registro.jsp">Registrarse</a><br>
 </div>
 
 </form>

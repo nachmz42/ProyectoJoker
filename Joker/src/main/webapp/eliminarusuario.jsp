@@ -8,14 +8,19 @@
 <link rel="stylesheet" href="STYLE/css/eliminarusuario.css"></link>
 </head>
 <body>
+<div class="encabezado">
+<div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
+<div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
+<div class="admin">AD</div>
+</div>
 
-
+<div class= "cuerpo">
 <div class= "testbox">
 	
 	<h1>Eliminar Usuario</h1>
   	<form action="/Joker/ServletEliminarusuario" method="post"><br>
   
-  	<div class="form2" style="">
+  	<div class="form2">
     
     
     <label for="email" id="1">Email</label><br>
@@ -33,7 +38,7 @@
   </form>
    
 </div>
-
+</div>
 
 </body>
 </html>

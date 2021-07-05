@@ -48,10 +48,10 @@ input[type=reset] {
 
 
 .testbox {
-	margin-top: 70px;
+	margin-top: 100px;
 	margin-left:500px;
 	width: 400px;
-	height: 600px;
+	height: 700px;
 	-webkit-border-radius: 50px/30px;
 	-moz-border-radius: 50px/30px;
 	border-radius: 50px/30px;
@@ -72,8 +72,92 @@ input[type=reset] {
     Text-align: left;
     width: 350px;
     margin-left: 50px;
+    
 }
 
-body {
-	background-color: #ABB2B9 ;
+.encabezado {
+	height: 120px;
+	width:100%; 
+	background-color: #A2D9CE;
+	flex-direction: column;
+	min-height: 20%;
+	display:inline-block;
+
 }
+
+.cuerpo{
+	width:100%; 
+	background-color: #E8F6F3 ;
+	flex-direction: column;
+	min-height: 20%;
+	display:inline-block;
+	
+}
+
+.home{
+	
+	padding-left: 3px;
+	margin-top: 30px;
+	margin-left: 50px;
+	width: 200px;
+	height: 40px;
+	border-radius: 6px/10px;
+	background-color: #E8F6F3;
+	-webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	-moz-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	border: solid 3px #cbc9c9;
+	Text-align: center;
+	font: Arial  150%;
+	font-size: 20px;
+	line-height: 200%;
+	color:black;
+	position: absolute;
+}
+.logout{
+	
+	padding-left: 3px;
+	margin-top: 30px;
+	margin-left: 1110px;
+	width: 200px;
+	height: 40px;
+	border-radius: 6px/10px;
+	background-color: #E8F6F3;
+	-webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	-moz-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	border: solid 3px #cbc9c9;
+	Text-align: center;
+	font: Arial  150%;
+	font-size: 20px;
+	line-height: 200%;
+	color:black;
+	position: absolute;
+}
+
+.admin {
+	padding-left: 3px;
+	margin-top: 30px;
+	margin-left: 600px;
+	width: 150px;
+	height: 150px;
+	border-radius: 6px/10px;
+	background-color: #E8F6F3;
+	-webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	-moz-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
+	border: solid 3px #cbc9c9;
+	Text-align: center;
+	font: Arial 150%;
+	font-size: 60px;
+	line-height: 250%;
+	color: black;
+	border-radius : 50%;
+	position: absolute;
+}
+
+
+
+
+
+
