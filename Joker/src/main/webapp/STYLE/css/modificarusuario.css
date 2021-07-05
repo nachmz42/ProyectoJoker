@@ -24,7 +24,7 @@ input[type=email], select {
 
 input[type=submit] {
 	width: 50%;
-	background-color: #4CAF50;
+	background-color: #D2B4DE;
 	color: white;
 	padding: 8px 0px;
 	margin: 8px 0;
@@ -36,7 +36,7 @@ input[type=submit] {
 
 input[type=reset] {
 	width: 50%;
-	background-color: #FFD333;
+	background-color: #EDBB99 ;
 	color: white;
 	padding: 8px 0px;
 	margin: 8px 0;
@@ -55,7 +55,7 @@ input[type=reset] {
 	-webkit-border-radius: 50px/30px;
 	-moz-border-radius: 50px/30px;
 	border-radius: 50px/30px;
-	background-color: linear-gradient(-225deg, #aac3c7 50%, #c4a0b2 50%);;
+	background:linear-gradient(100deg, #E8DAEF , white);
 	-webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
 	-moz-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
 	box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
