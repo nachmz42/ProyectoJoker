@@ -7,7 +7,10 @@
 <title>Login</title>
 <link rel="stylesheet" href="STYLE/css/login.css"></link>
 </head>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 926db98652f8fe4d52fbbeeb9aa77deb6def354a
 <body >
 
 	
@@ -28,6 +31,7 @@
 
 	</form>
 
+<<<<<<< HEAD
 
 
 </body>
@@ -36,4 +40,9 @@
 
 </body>
 
+=======
+</body>
+
+
+>>>>>>> 926db98652f8fe4d52fbbeeb9aa77deb6def354a
 </html>
