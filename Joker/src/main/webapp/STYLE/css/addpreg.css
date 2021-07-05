@@ -1,7 +1,6 @@
 @charset "ISO-8859-1";
 
 
-
 input[type=text], select {
 	width: 75%;
 	padding: 12px 20px;
@@ -55,7 +54,7 @@ input[type=reset] {
 	-webkit-border-radius: 50px/30px;
 	-moz-border-radius: 50px/30px;
 	border-radius: 50px/30px;
-	background-color: linear-gradient(-225deg, #aac3c7 50%, #c4a0b2 50%);;
+	background-color: #ebebeb;
 	-webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
 	-moz-box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
 	box-shadow: 2px 3px 6px rgba(0, 0, 0, .31);
@@ -89,9 +88,8 @@ input[type=reset] {
 	width:100%; 
 	background-color: #E8F6F3 ;
 	flex-direction: column;
-	min-height: 5%;
+	min-height: 20%;
 	display:inline-block;
-	
 	
 }
 
@@ -156,7 +154,6 @@ input[type=reset] {
 	border-radius : 50%;
 	position: absolute;
 }
-
 
 
 

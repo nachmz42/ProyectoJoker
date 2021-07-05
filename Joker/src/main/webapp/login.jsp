@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="STYLE/css/login.css"></link>
 <link rel="stylesheet" href="STYLE/css/login.js"></link>
 </head>
-<<<<<<< HEAD
-<body >
+
+<body>
 <div class= "testbox">
 <h1> Login</h1>
 <form action="Login"  method="post">
@@ -22,11 +22,14 @@
 <span style="color: red"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr") %></span><br>
 <a style="text-decoration:none; color:black" href="registro.jsp">Registrarse</a><br>
 </div>
-=======
-<body>
->>>>>>> refs/remotes/origin/main
+</form>
+</div>
 
-	<form>
+
+</body>
+
+
+<%-- 	<form>
 		<div class="login">
 			<header class="container">
 				<h2>Log In</h2>
@@ -43,7 +46,7 @@
 			</div>
 			</div>
 			</div>
-	</form>
+	</form> --%>
 
 
 </body>
