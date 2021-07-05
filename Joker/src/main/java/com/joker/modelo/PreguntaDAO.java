@@ -60,11 +60,11 @@ public class PreguntaDAO {
 		String sql3 ="";
 		
 		
-		if(opcion.equals("m")) {
+		if(opcion.equals("c")) {
 			sql1 ="ALTER TABLE `categoria_cultura` DROP `id_pregunta`";
 			sql2 ="ALTER TABLE `categoria_cultura` AUTO_INCREMENT = 1";
 			sql3 ="ALTER TABLE `categoria_cultura` ADD `id_pregunta` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST";
-		}else {if(opcion.equals("c")) {
+		}else {if(opcion.equals("m")) {
 			sql1 ="ALTER TABLE `categoria_maths` DROP `id_pregunta`";
 			sql2 ="ALTER TABLE `categoria_maths` AUTO_INCREMENT = 1";
 			sql3 ="ALTER TABLE `categoria_maths` ADD `id_pregunta` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST";
