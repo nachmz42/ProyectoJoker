@@ -14,7 +14,7 @@
 		<nav>
 			<a href="index.jsp">Home</a>
 			 <a href="#">Ranking</a>
-			  <a href="#">Exit</a>
+			  <a href="Logout">Exit</a>
 		</nav>
 
 		<h1>CATEGORIAS</h1>
@@ -23,15 +23,13 @@
 
 	<div class="container">
 		<div class="box">
-			<a href="#"><img src="STYLE/imagenes/cultgeneral.jpg"></a> <span>Cultura
-				General</span>
+			<a href="culturaGeneral.jsp"><img src="STYLE/imagenes/cultgeneral.jpg"></a> <span>Cultura General</span>
 		</div>
 		<div class="box">
-			<a href="#"><img src="STYLE/imagenes/mates.jpg"></a> <span>Special
-				Maths</span>
+			<a href="mates.jsp"><img src="STYLE/imagenes/mates.jpg"></a> <span>Special Maths</span>
 		</div>
 		<div class="box">
-			<a href="#"><img src="STYLE/imagenes/programacion.jpg"></a> <span>Programación</span>
+			<a href="programacion.jsp"><img src="STYLE/imagenes/programacion.jpg"></a> <span>Programación</span>
 		</div>
 	</div>
 
