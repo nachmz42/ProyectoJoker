@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.joker.modelo.PreguntaDAO;
+import java.sql.Timestamp;
+
 
 
 /**
@@ -17,12 +20,25 @@ import javax.servlet.http.HttpSession;
 public class ServletCategorias extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-
-	}
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		Long datetime = System.currentTimeMillis();
+		Timestamp fin = new Timestamp(datetime);
+		Long miliFin = fin.getTime();
+		String miliI = request.getParameter("horas");
+		Long  miliInicio = Long.parseLong(miliI);
+		
+		Long tiempoTotal = miliFin - miliInicio;
+		Long segundosTotal = tiempoTotal/1000;
+		int segsTotal = Math.toIntExact(segundosTotal);
+		int minTotal = segsTotal/60;
+		int horaTotal = minTotal/60;
+		int segsTotalReal = segsTotal - minTotal*60;
+		int minTotalReal = minTotal - horaTotal*60;
+		String min = String.valueOf(minTotalReal);
+		String horas = String.valueOf(horaTotal);
+		String segs = String.valueOf(segsTotalReal);
+		String tiempo = horas+":"+min+":"+segs;
 		
 		int puntuacion= 0;
 		String rs1,rs2,rs3,rs4,rs5,rs6,rs7,rs8,rs9,rs10;
@@ -31,9 +47,8 @@ public class ServletCategorias extends HttpServlet {
 		String email = (String) sesion.getAttribute("email");
 		String nombre = (String) sesion.getAttribute("nombre");
 		String ape = (String) sesion.getAttribute("apellidos");
-		String edad = (String) sesion.getAttribute("edad");
-
-
+		String cat = request.getParameter("categoria");
+		PreguntaDAO pdao = new PreguntaDAO();
 		
 		
 		
@@ -65,6 +80,10 @@ public class ServletCategorias extends HttpServlet {
 				puntuacion ++;
 			}
 		}
+		pdao.rankear(email,nombre,cat,ape,puntuacion,tiempo);
 	}
+	
+	
 
 }
+

@@ -60,11 +60,11 @@ public class PreguntaDAO {
 		String sql3 ="";
 		
 		
-		if(opcion.equals("m")) {
+		if(opcion.equals("c")) {
 			sql1 ="ALTER TABLE `categoria_cultura` DROP `id_pregunta`";
 			sql2 ="ALTER TABLE `categoria_cultura` AUTO_INCREMENT = 1";
 			sql3 ="ALTER TABLE `categoria_cultura` ADD `id_pregunta` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST";
-		}else {if(opcion.equals("c")) {
+		}else {if(opcion.equals("m")) {
 			sql1 ="ALTER TABLE `categoria_maths` DROP `id_pregunta`";
 			sql2 ="ALTER TABLE `categoria_maths` AUTO_INCREMENT = 1";
 			sql3 ="ALTER TABLE `categoria_maths` ADD `id_pregunta` int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST";
@@ -128,4 +128,27 @@ public class PreguntaDAO {
         }
         return test;
     }
+	
+	public void rankear(String email, String nombre, String categoria, String ape, int puntuacion, String tiempo) {
+		
+		String SQL = "Insert into ranking (email,nombre,apellidos,categoria,tiempo,puntuacion) "
+				+ "values (?,?,?,?,?,?)";
+		try {
+			Connection con = Conexion.getInstance().getConnection();
+			PreparedStatement pst = con.prepareStatement(SQL);
+			pst.setString(1,email);
+			pst.setString(2,nombre);
+			pst.setString(3,ape);
+			pst.setString(4,categoria);
+			pst.setString(5,tiempo);
+			pst.setInt(6,puntuacion);
+			pst.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 }

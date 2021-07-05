@@ -5,6 +5,9 @@
 <%@ page import = "com.joker.services.Conexion" %>
 <%@ page import = "com.joker.modelo.Pregunta" %>
 <%@ page import = "com.joker.modelo.PreguntaDAO" %>
+<%@ page import = "java.util.Date" %>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -13,7 +16,12 @@
 <title>Cultura General</title>
 </head>
 <body>
-	<%  		Connection con = Conexion.getInstance().getConnection();
+	<% 
+	Long datetime = System.currentTimeMillis();
+	Timestamp inicio = new Timestamp(datetime);
+	Long inicial = inicio.getTime();
+	
+	Connection con = Conexion.getInstance().getConnection();
 	String SQL = "Select MAX(id_pregunta) as id_pregunta from categoria_cultura";
 	Statement st = con.createStatement();
 	String sql="Select * from categoria_cultura where id_pregunta = ?";
@@ -71,7 +79,10 @@
 	}
 	
 	%>
+	
 	<form action="ServletCategorias" method="post">
+		<input type="hidden" name="inicial" value="<%=inicial%>">
+
 	<p> <%=pregs[0].getPregunta() %></p>
 	
 	<select name="pregunta1">
@@ -192,6 +203,7 @@
   	</select>
   	<input type="hidden" name="p10rsc" value=<%= pregs[9].getRsc()%>>	
   	<br>
+  	<input type="hidden" name="categoria" value="Cultura General">	
   	<input type="submit" value="Enviar Respuestas">	
 	</form>
 	
