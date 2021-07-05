@@ -25,8 +25,10 @@ public class ServletCategorias extends HttpServlet {
 		Long datetime = System.currentTimeMillis();
 		Timestamp fin = new Timestamp(datetime);
 		Long miliFin = fin.getTime();
-		String miliI = request.getParameter("horas");
-		Long  miliInicio = Long.parseLong(miliI);
+		System.out.println(miliFin);
+		String miliI = request.getParameter("inicial");
+		System.out.println(miliI);
+		Long  miliInicio = Long.valueOf(miliI);
 		
 		Long tiempoTotal = miliFin - miliInicio;
 		Long segundosTotal = tiempoTotal/1000;
@@ -46,7 +48,7 @@ public class ServletCategorias extends HttpServlet {
 		HttpSession sesion = request.getSession();
 		String email = (String) sesion.getAttribute("email");
 		String nombre = (String) sesion.getAttribute("nombre");
-		String ape = (String) sesion.getAttribute("apellidos");
+		String ape = (String) sesion.getAttribute("apellido");
 		String cat = request.getParameter("categoria");
 		PreguntaDAO pdao = new PreguntaDAO();
 		

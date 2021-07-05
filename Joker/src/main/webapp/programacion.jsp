@@ -20,6 +20,7 @@
 	Long datetime = System.currentTimeMillis();
 	Timestamp inicio = new Timestamp(datetime);
 	Long inicial = inicio.getTime();
+	String ini = String.valueOf(inicial);
 	
 	Connection con = Conexion.getInstance().getConnection();
 	String SQL = "Select MAX(id_pregunta) as id_pregunta from categoria_programacion";
@@ -81,7 +82,7 @@
 	%>
 	
 	<form action="ServletCategorias" method="post">
-		<input type="hidden" name="inicial" value="<%=inicial%>">
+		<input type="hidden" name="inicial" value="<%=ini%>">
 
 	<p> <%=pregs[0].getPregunta() %></p>
 	
