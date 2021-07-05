@@ -1,7 +1,6 @@
 @charset "ISO-8859-1";
 
 
-
 input[type=text], select {
 	width: 75%;
 	padding: 12px 20px;
@@ -24,7 +23,7 @@ input[type=email], select {
 
 input[type=submit] {
 	width: 50%;
-	background-color:#D2B4DE;
+	background-color: #D2B4DE;
 	color: white;
 	padding: 8px 0px;
 	margin: 8px 0;
@@ -51,7 +50,7 @@ input[type=reset] {
 	margin-top: 100px;
 	margin-left:500px;
 	width: 400px;
-	height: 700px;
+	height: 600px;
 	-webkit-border-radius: 50px/30px;
 	-moz-border-radius: 50px/30px;
 	border-radius: 50px/30px;
@@ -155,8 +154,6 @@ input[type=reset] {
 	border-radius : 50%;
 	position: absolute;
 }
-
-
 
 
 
