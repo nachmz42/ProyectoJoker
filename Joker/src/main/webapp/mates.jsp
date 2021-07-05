@@ -204,7 +204,7 @@
   	</select>
   	<input type="hidden" name="p10rsc" value=<%= pregs[9].getRsc()%>>	
   	<br>
-  	 <input type="hidden" name="categoria" value="Matemáticas">	
+  	<input type="hidden" name="categoria" value="Matemáticas">	
   	<input type="submit" value="Enviar Respuestas">	
 	</form>
 	
