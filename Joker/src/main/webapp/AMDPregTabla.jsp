@@ -104,15 +104,16 @@ th {
 			<td><%= rsmath.getString("rs3")%></td>
 			<td><%= rsmath.getString("rs4")%></td>
 			<td><%= rsmath.getString("rsc")%></td>
-
-			<td><a style="text-decoration: none; color: black href="
-				AMDPreg?categoria=m&id=
-				<%= rsmath.getString("id_pregunta") %>&opcion=mod">Modificar </a> <i
-				class="fa fa-edit" aria-hidden="true"></i> <a
-				style="text-decoration: none; color: black href="
-				AMDPreg?categoria=m&id=
-				<%= rsmath.getString("id_pregunta") %>&opcion=del">Eliminar</a><i
-				class="fa fa-trash" aria-hidden="true"></i></td>
+			
+			
+			<td><a style="text-decoration: none; color: black"
+				href="AMDPreg?categoria=m&id=<%= rsmath.getString("id_pregunta")%>&opcion=mod">Modificar</a>
+				<i class="fa fa-edit" aria-hidden="true"></i> <a
+				style="text-decoration: none; color: black"
+				href="AMDPreg?categoria=m&id=<%= rsmath.getString("id_pregunta")%>&opcion=del">
+					Eliminar<i class="fa fa-trash" aria-hidden="true"></i>
+			</a></td>
+			
 		</tr>
 		<%} rsmath.close();%>
 		<%sql = "SELECT * FROM categoria_programacion";
@@ -126,14 +127,13 @@ th {
 			<td><%= rsprog.getString("rs4")%></td>
 			<td><%= rsprog.getString("rsc")%></td>
 
-
-			<td><a style="text-decoration: none; color: black href="AMDPreg?categoria=p&id=
-			<%= rsprog.getString("id_pregunta") %>&opcion=mod">Modificar </a> <i
-				class="fa fa-edit" aria-hidden="true"></i> <a
-				style="text-decoration: none; color: black href="
-				AMDPreg?categoria=p&id=
-				<%= rsprog.getString("id_pregunta") %>&opcion=del">Eliminar</a><i
-				class="fa fa-trash" aria-hidden="true"></i></td>
+	<td><a style="text-decoration: none; color: black"
+				href="AMDPreg?categoria=p&id=<%= rsprog.getString("id_pregunta")%>&opcion=mod">Modificar</a>
+				<i class="fa fa-edit" aria-hidden="true"></i> <a
+				style="text-decoration: none; color: black"
+				href="AMDPreg?categoria=p&id=<%= rsprog.getString("id_pregunta")%>&opcion=del">
+					Eliminar<i class="fa fa-trash" aria-hidden="true"></i>
+			</a></td>
 		</tr>
 		<%} rsprog.close(); %>
 	</table>
