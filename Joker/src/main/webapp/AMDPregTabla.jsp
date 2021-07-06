@@ -44,18 +44,18 @@ th {
 <body>
 
 	<div class="encabezado">
-	<div class="home"><a style="text-decoration: none; color: black" href="index.jsp">Home</a></div>
+	<div class="home"><a style="text-decoration: none; color: black" href="admin.jsp">Home</a></div>
 	<div class="logout"><a style="text-decoration: none; color: black" href="Logout">Logout</a></div>
 	<div class="añadirpregunta"><a style="text-decoration: none; color: black" href="formAddPreg.html">Añadir Pregunta</a></div>
 	<div class="admin">AD</div>
 	</div>
 	<table>
 		<caption>
-			<b> Lista de preguntas </b>
+			<b> Lista de preguntas Cultura General </b>
 		</caption>
 		<% 
 		Connection con = Conexion.getInstance().getConnection();
-		String sql = "SELECT * FROM categoria_cultura";
+		String sql = "SELECT * FROM categoria_cultura order by  pregunta asc";
 		Statement st = con.createStatement();
 		ResultSet rscult = st.executeQuery(sql);
 		
@@ -91,9 +91,18 @@ th {
 					Eliminar<i class="fa fa-trash" aria-hidden="true"></i>
 			</a></td>
 		</tr>
+		
 
 		<%  } rscult.close();%>
-		<% sql = "SELECT * FROM categoria_maths";
+		</table>
+		
+		<table>
+		<caption>
+			<b> Lista de preguntas Matemáticas </b>
+		</caption>
+		
+	
+		<% sql = "SELECT * FROM categoria_maths order by  pregunta asc ";
 	ResultSet rsmath = st.executeQuery(sql); %>
 
 		<% while(rsmath.next()){ %>
@@ -116,7 +125,13 @@ th {
 			
 		</tr>
 		<%} rsmath.close();%>
-		<%sql = "SELECT * FROM categoria_programacion";
+		</table>
+		<table>
+		<caption>
+			<b> Lista de preguntas Programación </b>
+		</caption>
+		
+		<%sql = "SELECT * FROM categoria_programacion order by  pregunta asc";
 	ResultSet rsprog = st.executeQuery(sql); %>
 		<% while(rsprog.next()){ %>
 		<tr>

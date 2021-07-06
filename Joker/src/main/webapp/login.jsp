@@ -18,25 +18,13 @@
 			<div class="field-set">
 				<input class="usuario" id="txt-input" type="email" name="email" placeholder="email" required><br>
 				<input class="usuario" id="txt-input" type="text" name="password" placeholder="Password.." required><br> 
-				<input class="usuario" id="submit-input" type="submit" class=" btn submit " value="Login"> <span
-				style="color: white"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr")%></span><br>
-				<button class="btn submit registro"  id="registid" value="Registrarse"></span><a href="registro.jsp">Registrarse</a></button><br>
+				<input class="usuario" id="submit-input" type="submit" class=" btn submit " value="Login"> 
+				<span style="color: white"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr")%></span><br>
+				<button class="btn submit registro"  id="registid" value="Registrarse"> Registrarse</button>
+				 
 			</div>
 		</div>
 	</form>
-<<<<<<< HEAD
 
-
-
-
-</body>
-
-
-
-
-
-=======
-</body>
->>>>>>> 6b1e22f8eceb4f573e8ba7c8adfd748e84fa0b3b
 
 </html>

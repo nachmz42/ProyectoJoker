@@ -12,6 +12,15 @@
 <title>Ranking</title>
 </head>
 <body>
+
+<header>
+		<nav>
+			<a href="usuarios.jsp">Home</a>
+			  <a href="Logout">Exit</a>
+		</nav>
+
+		<h1>Ranking</h1>
+	</header>
 <%
 Connection con = Conexion.getInstance().getConnection();
 String sql="Select * from ranking where categoria = 'Cultura General' order by puntuacion desc" ;
