@@ -11,7 +11,7 @@
 	<% int puntuacion = (int) request.getAttribute("puntuacion");
 	String tiempo = (String) request.getAttribute("tiempo");%>
 	
-	<h1>Tu puntuación ha sido: <%=puntuacion %></h1>
-	<h1>Has tardado: <%=tiempo %></h1>
+	<h1 class="puntuación">Tu puntuación ha sido: <%=puntuacion %></h1>
+	<h1 class="tiempo">Has tardado: <%=tiempo %></h1>
 </body>
 </html>
