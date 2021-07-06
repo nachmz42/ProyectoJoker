@@ -15,7 +15,7 @@
 </div>
 <div class="cuerpo">
  <div class="user1"><a style="text-decoration:none; color:black"  href="categorias.jsp">CATEGORÍAS</a></div>
-<div class="user2"><a style="text-decoration:none; color:black"  href="#">RANDOM QUIZ</a></div>
+<div class="user2"><a style="text-decoration:none; color:black"  href="random.jsp">RANDOM QUIZ</a></div>
 <div class="user3"><a style="text-decoration:none; color:black" href="ranking.jsp">RANKING</a></div>
 <div class="user4"><a style="text-decoration:none; color:black" href="sugerencias.jsp">SUGERENCIAS</a></div>
 </div>
