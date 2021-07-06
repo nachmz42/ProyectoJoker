@@ -47,7 +47,7 @@
 	ResultSet rsMaths = st.executeQuery(SQL);
 	int idmaxMaths = 0;
 	
-	while(rs.next()){
+	while(rsMaths.next()){
 		idmaxMaths = rsMaths.getInt("id_pregunta");
 	}
 	SQL = "Select MAX(id_pregunta) as id_pregunta from categoria_maths";
@@ -55,7 +55,7 @@
 	
 	int idmaxProg = 0;
 	
-	while(rs.next()){
+	while(rsProg.next()){
 		idmaxProg = rsProg.getInt("id_pregunta");
 	}
 	int xCult;
@@ -70,7 +70,7 @@
 	double iProg = Math.random()*(idmaxProg)+1;
 	xProg = (int) iProg;
 	
-	for(int w = 0; w<=3; w++){
+	for(int w = 0; w<=2; w++){
 		while(true) {
 			
 			
@@ -85,7 +85,7 @@
 		}
 	}
 	
-	for(int w = 0; w<=3; w++){
+	for(int w = 0; w<=2; w++){
 		while(true) {
 			
 			
@@ -100,7 +100,7 @@
 		}
 	}
 	
-	for(int w = 0; w<=3; w++){
+	for(int w = 0; w<=2; w++){
 		while(true) {
 			
 			
@@ -177,5 +177,130 @@
 	
 	
 %>
+
+	<form action="ServletCategorias" method="post">
+	<input type="hidden" name="inicial" value="<%=ini%>">
+	<br>
+	<p> <%=pregsCult[0].getPregunta() %></p>
+	
+	<select name="pregunta1">
+
+    	<option value="<%=pregsCult[0].getRs1() %>"><%=pregsCult[0].getRs1() %></option>
+    	<option value="<%=pregsCult[0].getRs2() %>"><%=pregsCult[0].getRs2() %></option>
+    	<option value="<%=pregsCult[0].getRs3() %>"><%=pregsCult[0].getRs3() %></option>
+    	<option value="<%=pregsCult[0].getRs4() %>"><%=pregsCult[0].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p1rsc" value=<%= pregsCult[0].getRsc()%>>
+  	<br>
+  	<p> <%=pregsMaths[0].getPregunta() %></p>
+	
+	<select name="pregunta2">
+
+    	<option value="<%=pregsMaths[0].getRs1() %>"><%=pregsMaths[0].getRs1() %></option>
+    	<option value="<%=pregsMaths[0].getRs2() %>"><%=pregsMaths[0].getRs2() %></option>
+    	<option value="<%=pregsMaths[0].getRs3() %>"><%=pregsMaths[0].getRs3() %></option>
+    	<option value="<%=pregsMaths[0].getRs4() %>"><%=pregsMaths[0].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p2rsc" value=<%= pregsMaths[0].getRsc()%>>
+	<br>
+  	
+  	<p> <%=pregsProg[0].getPregunta() %></p>
+	
+	<select name="pregunta3">
+
+    	<option value="<%=pregsProg[0].getRs1() %>"><%=pregsProg[0].getRs1() %></option>
+    	<option value="<%=pregsProg[0].getRs2() %>"><%=pregsProg[0].getRs2() %></option>
+    	<option value="<%=pregsProg[0].getRs3() %>"><%=pregsProg[0].getRs3() %></option>
+    	<option value="<%=pregsProg[0].getRs4() %>"><%=pregsProg[0].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p3rsc" value=<%= pregsProg[0].getRsc()%>>
+  	<br>
+  		<p> <%=pregsCult[1].getPregunta() %></p>
+	
+	<select name="pregunta4">
+
+    	<option value="<%=pregsCult[1].getRs1() %>"><%=pregsCult[1].getRs1() %></option>
+    	<option value="<%=pregsCult[1].getRs2() %>"><%=pregsCult[1].getRs2() %></option>
+    	<option value="<%=pregsCult[1].getRs3() %>"><%=pregsCult[1].getRs3() %></option>
+    	<option value="<%=pregsCult[1].getRs4() %>"><%=pregsCult[1].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p4rsc" value=<%= pregsCult[1].getRsc()%>>
+  	<br>
+  	<p> <%=pregsMaths[1].getPregunta() %></p>
+	
+	<select name="pregunta5">
+
+    	<option value="<%=pregsMaths[1].getRs1() %>"><%=pregsMaths[1].getRs1() %></option>
+    	<option value="<%=pregsMaths[1].getRs2() %>"><%=pregsMaths[1].getRs2() %></option>
+    	<option value="<%=pregsMaths[1].getRs3() %>"><%=pregsMaths[1].getRs3() %></option>
+    	<option value="<%=pregsMaths[1].getRs4() %>"><%=pregsMaths[1].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p5rsc" value=<%= pregsMaths[1].getRsc()%>>
+	<br>
+  	
+  	<p> <%=pregsProg[1].getPregunta() %></p>
+	<br>
+	<select name="pregunta6">
+
+    	<option value="<%=pregsProg[1].getRs1() %>"><%=pregsProg[1].getRs1() %></option>
+    	<option value="<%=pregsProg[1].getRs2() %>"><%=pregsProg[1].getRs2() %></option>
+    	<option value="<%=pregsProg[1].getRs3() %>"><%=pregsProg[1].getRs3() %></option>
+    	<option value="<%=pregsProg[1].getRs4() %>"><%=pregsProg[1].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p6rsc" value=<%= pregsProg[1].getRsc()%>>
+  	<br>
+  		<p> <%=pregsCult[0].getPregunta() %></p>
+	
+	<select name="pregunta7">
+
+    	<option value="<%=pregsCult[2].getRs1() %>"><%=pregsCult[2].getRs1() %></option>
+    	<option value="<%=pregsCult[2].getRs2() %>"><%=pregsCult[2].getRs2() %></option>
+    	<option value="<%=pregsCult[2].getRs3() %>"><%=pregsCult[2].getRs3() %></option>
+    	<option value="<%=pregsCult[2].getRs4() %>"><%=pregsCult[2].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p7rsc" value=<%= pregsCult[2].getRsc()%>>
+  	
+  	<p> <%=pregsMaths[2].getPregunta() %></p>
+  	<br>
+	
+	<select name="pregunta8">
+
+    	<option value="<%=pregsMaths[2].getRs1() %>"><%=pregsMaths[2].getRs1() %></option>
+    	<option value="<%=pregsMaths[2].getRs2() %>"><%=pregsMaths[2].getRs2() %></option>
+    	<option value="<%=pregsMaths[2].getRs3() %>"><%=pregsMaths[2].getRs3() %></option>
+    	<option value="<%=pregsMaths[2].getRs4() %>"><%=pregsMaths[2].getRs4() %></option>
+		
+  	</select>
+  	<input type="hidden" name="p8rsc" value=<%= pregsMaths[0].getRsc()%>>
+  	<br>
+
+  	
+  	<p> <%=pregsProg[2].getPregunta() %></p>
+	
+	<select name="pregunta9">
+
+    	<option value="<%=pregsProg[2].getRs1() %>"><%=pregsProg[2].getRs1() %></option>
+    	<option value="<%=pregsProg[2].getRs2() %>"><%=pregsProg[2].getRs2() %></option>
+    	<option value="<%=pregsProg[2].getRs3() %>"><%=pregsProg[2].getRs3() %></option>
+    	<option value="<%=pregsProg[2].getRs4() %>"><%=pregsProg[2].getRs4() %></option>
+		
+  	</select>
+  	<br>
+  	<input type="hidden" name="p9rsc" value=<%= pregsProg[2].getRsc()%>>
+  	<input type="hidden" name="pregunta10" value="Sí">
+  	<input type="hidden" name="p10rsc" value="No">
+  	
+  	<input type="hidden" name="categoria" value="Random">	
+  	<input type="submit" value="Enviar Respuestas">	
+  	</form>
+  	
+  	
 </body>
 </html>

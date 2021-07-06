@@ -53,8 +53,7 @@ public class ServletCategorias extends HttpServlet {
 		String ape = (String) sesion.getAttribute("apellido");
 		String cat = request.getParameter("categoria");
 		PreguntaDAO pdao = new PreguntaDAO();
-		
-		
+	
 		
 		rs1 = request.getParameter("pregunta1");
 		rsc1= request.getParameter("p1rsc");
@@ -85,10 +84,12 @@ public class ServletCategorias extends HttpServlet {
 			}
 		}
 		pdao.rankear(email,nombre,cat,ape,puntuacion,tiempo);
-		RequestDispatcher rd = request.getRequestDispatcher("ranking.jsp");
+		request.setAttribute("puntuacion", puntuacion);
+		request.setAttribute("tiempo", tiempo);
+		RequestDispatcher rd = request.getRequestDispatcher("puntuacion.jsp");
 		rd.forward(request, response);
 		
-		
+	
 	}
 	
 	

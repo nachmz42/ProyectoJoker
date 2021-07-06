@@ -38,8 +38,16 @@
             <button class="dropbtn">Juegos</button>
                 <div class="dropdown-content">
                     <a href="categorias.jsp">Categorias</a> 
-                    <a href="#">Random Quiz</a>
-                    <a href="#">Ranking</a>
+                    <% HttpSession sesion = request.getSession();
+					if(sesion.getAttribute("login")!=null){ 
+					if(sesion.getAttribute("login").equals("on")){ %>
+                    <a href="random.jsp">Random Quiz</a>
+                    <% } else{%>
+                    <a href="login.jsp">Random Quiz</a>
+                    <%} } else{ %>
+                    <a href="login.jsp">Random Quiz</a>
+                    <%}%>
+                    <a href="ranking.jsp">Ranking</a>
                 </div>
         </li>
       <li id="home"><a href="index.jsp">Home</a>

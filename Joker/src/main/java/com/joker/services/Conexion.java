@@ -9,7 +9,11 @@ public class Conexion {
 	
 	private static Conexion instancia;
     private Connection connection;
+<<<<<<< HEAD
     private String url = "jdbc:mysql://localhost:3306/Proyectojoker?serverTimezone=UTC";
+=======
+    private String url = "jdbc:mysql://localhost:3307/proyecto_joker?serverTimezone=UTC";
+>>>>>>> db5f0f571da6cd2be8a1b4bec5378abfedff6c33
     private String username = "root";
     private String password = "Mariam1998";
 
