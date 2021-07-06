@@ -42,23 +42,21 @@ th {
 <link rel="stylesheet" href="STYLE/css/ranking.css"></link>
 </head>
 <body>
-
+<div class ="encabezado">
 <header>
 		<nav>
-			<div class="home"><a href="usuarios.jsp">Home</a></div>
-			  <div class="logout"><a href="Logout">Exit</a></div>
+			<div class="home"><a href="usuarios.jsp" style="text-decoration:none; color:black" >Home</a></div>
+			  <div class="logout"><a href="Logout" style="text-decoration:none; color:black">Exit</a></div>
 		</nav>
 
 		<h1 class="titulo">Ranking</h1>
 	</header>
+	</div>
 <%
 Connection con = Conexion.getInstance().getConnection();
 String sql="Select * from ranking where  categoria = 'Cultura General'  order by puntuacion desc , tiempo desc" ;
 Statement st = con.createStatement();
 ResultSet rscult = st.executeQuery(sql);
-
-
-
 int ic = 1;
 %>
 
@@ -70,7 +68,7 @@ int ic = 1;
 		<td>Puntuación</td>
 		<td>Tiempo</td>
 	</tr>
-	<% while(rscult.next() && ic <=3) {%>
+	<% while(rscult.next() && ic <=5) {%>
 	<tr>
 		<td><%= rscult.getString("nombre") %></td>
 		<td><%= rscult.getString("apellidos") %></td>
@@ -94,7 +92,7 @@ int im = 1;
 		<td>Puntuación</td>
 		<td>Tiempo</td>
 	</tr>
-	<% while(rsmaths.next() && im <=3) {%>
+	<% while(rsmaths.next() && im <=5) {%>
 	<tr>
 		<td><%= rsmaths.getString("nombre") %></td>
 		<td><%= rsmaths.getString("apellidos") %></td>
@@ -118,7 +116,7 @@ int ip = 1;
 		<td>Puntuación</td>
 		<td>Tiempo</td>
 	</tr>
-	<% while(rsprog.next() && ip <=3) {%>
+	<% while(rsprog.next() && ip <=5) {%>
 	<tr>
 		<td><%= rsprog.getString("nombre") %></td>
 		<td><%= rsprog.getString("apellidos") %></td>
@@ -154,6 +152,7 @@ int ir = 1;
 	</tr>
 	<% ir++; }%>
 </table>
+
 
 
 </body>
