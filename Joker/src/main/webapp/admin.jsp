@@ -11,7 +11,7 @@
 <div class="encabezado">
 <div class="home"><a style="text-decoration:none; color:black" href="admin.jsp">Home</a></div>
 <div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
-<div class="admin">AD</div>
+<div class="admin">ADMIN</div>
 </div>
 <div class="cuerpo">
 <div class="admin1"><a style="text-decoration:none; color:black"  href="añadirusuario.jsp">Añadir usuario</a></div><br>

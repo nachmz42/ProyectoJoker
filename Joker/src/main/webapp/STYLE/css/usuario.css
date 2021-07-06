@@ -145,7 +145,7 @@ html, body {
 .admin {
 	padding-left: 3px;
 	margin-top: 10px;
-	margin-left: 550px;
+	margin-left: 500px;
 	width: 200px;
 	height: 200px;
 	border-radius: 6px/10px;
@@ -156,7 +156,7 @@ html, body {
 	border: solid 3px #cbc9c9;
 	Text-align: center;
 	font: Arial 150%;
-	font-size: 80px;
+	font-size: 70px;
 	line-height: 250%;
 	color: black;
 	border-radius: 50%;

@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import javax.servlet.http.HttpSession;
 
 import com.joker.modelo.Usuario;
 import com.joker.modelo.UsuarioDAO;
@@ -59,13 +59,14 @@ public class ServletResgistro extends HttpServlet {
 		
 		if(rs== true) {
 			
-			response.sendRedirect("index.jsp");
-			String msgerr = null;
-			request.setAttribute("msgerr", msgerr);
+			response.sendRedirect("login.jsp");
+			
 		}else {
+			
+			HttpSession sesion= request.getSession();
+			String msgerror = "usuario no se ha creado, el correo introducido ya existe";
+			sesion.setAttribute("msgerror", msgerror);
 			response.sendRedirect("registro.jsp");
-			String msgerr = "usuario no se ha creado, el correo introducido ya existe";
-			request.setAttribute("msgerr", msgerr);
 			}
 			
 		}

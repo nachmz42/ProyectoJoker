@@ -7,11 +7,12 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="STYLE/css/usuario.css"></link>
 </head>
+<%HttpSession sesion= request.getSession(); %>
 <body>
 <div class="encabezado">
 <div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
 <div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
-<div class="admin">USER</div>
+<div class="admin"><%= sesion.getAttribute("nombre") %></div>
 </div>
 <div class="cuerpo">
  <div class="user1"><a style="text-decoration:none; color:black"  href="categorias.jsp">CATEGORÍAS</a></div>
