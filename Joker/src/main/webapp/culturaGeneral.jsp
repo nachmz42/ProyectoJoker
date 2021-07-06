@@ -58,10 +58,7 @@
 			}
 		}
 	}
-	for(int e : elegidas) {
-		System.out.println(String.valueOf(e));
-	}
-	
+
 	for(int z=0; z<=9;z++){
 		pst.setString(1,String.valueOf(elegidas[z]));
 		rspregs = pst.executeQuery();
