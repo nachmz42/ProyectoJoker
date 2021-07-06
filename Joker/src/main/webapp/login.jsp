@@ -9,8 +9,6 @@
 <link rel="stylesheet" href="STYLE/css/login.css"></link>
 
 <body >
-
-	
 	<form action="Login" method="post">
 		<div class="login">
 			<header class="container">
@@ -25,8 +23,8 @@
 				<button class="btn submit registro"  id="registid" value="Registrarse"></span><a href="registro.jsp">Registrarse</a></button><br>
 			</div>
 		</div>
-
 	</form>
+<<<<<<< HEAD
 
 
 
@@ -37,5 +35,8 @@
 
 
 
+=======
+</body>
+>>>>>>> 6b1e22f8eceb4f573e8ba7c8adfd748e84fa0b3b
 
 </html>
