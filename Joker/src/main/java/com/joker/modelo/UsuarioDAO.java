@@ -50,6 +50,7 @@ public class UsuarioDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			
+			
 			return false;
 		}
 		
@@ -61,7 +62,7 @@ public class UsuarioDAO {
 
 		
 
-		String sql = "UPDATE usuarios SET nombre= ?, apellidos= ?,edad= ?,pass= ?,rol= ? WHERE email=? ";
+		String sql = "UPDATE usuarios  SET nombre= ?, apellidos= ?,edad= ?,pass= ?,rol= ? WHERE email=? ";
 
 		try {
 			con = Conexion.getInstance().getConnection();

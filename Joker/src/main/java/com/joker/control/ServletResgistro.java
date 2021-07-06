@@ -51,7 +51,7 @@ public class ServletResgistro extends HttpServlet {
 		
 		
 		System.out.println("NOMBRE: " + nombre);
-		System.out.println("APELLIDOS: " + apellidos);
+		System.out.println("APELLIDOS : " + apellidos);
 		System.out.println("EMAIL: " + email);
 		System.out.println("PASSWORD: " + password);
 		System.out.println("EDAD: " + edadNum);
@@ -60,6 +60,8 @@ public class ServletResgistro extends HttpServlet {
 		if(rs== true) {
 			
 			response.sendRedirect("index.jsp");
+			String msgerr = null;
+			request.setAttribute("msgerr", msgerr);
 		}else {
 			response.sendRedirect("registro.jsp");
 			String msgerr = "usuario no se ha creado, el correo introducido ya existe";

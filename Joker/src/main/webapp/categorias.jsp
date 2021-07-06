@@ -14,7 +14,7 @@
 		<nav>
 			<a href="usuarios.jsp">Home</a>
 			 <a href="ranking.jsp">Ranking</a>
-			  <a href="Logout">Exit</a>
+			  <a href="Logout">Exit </a>
 		</nav>
 
 		<h1>CATEGORIAS</h1>

@@ -14,7 +14,7 @@
   <div class="registt">
    <div class="Container">
    <header class="head-form">
-      <h2>Registro</h2>
+      <h2>Registro </h2>
    </header>
 
    <br>

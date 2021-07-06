@@ -39,21 +39,21 @@ th {
 	background: #eee;
 }
 </style>
-<link rel="stylesheet" href="STYLE/css/tabla.css"></link>
+<link rel="stylesheet" href="STYLE/css/ranking.css"></link>
 </head>
 <body>
 
 <header>
 		<nav>
-			<a href="usuarios.jsp">Home</a>
-			  <a href="Logout">Exit</a>
+			<div class="home"><a href="usuarios.jsp">Home</a></div>
+			  <div class="logout"><a href="Logout">Exit</a></div>
 		</nav>
 
-		<h1>Ranking</h1>
+		<h1 class="titulo">Ranking</h1>
 	</header>
 <%
 Connection con = Conexion.getInstance().getConnection();
-String sql="Select * from ranking where categoria = 'Cultura General' order by puntuacion desc" ;
+String sql="Select * from ranking where  categoria = 'Cultura General'  order by puntuacion desc , tiempo desc" ;
 Statement st = con.createStatement();
 ResultSet rscult = st.executeQuery(sql);
 
@@ -82,7 +82,7 @@ int ic = 1;
 </table>
 <br>
 <%
-sql="Select * from ranking where categoria = 'Matemáticas' order by puntuacion desc" ;
+sql="Select * from ranking where categoria = 'Matemáticas' order by puntuacion desc , tiempo asc" ;
 ResultSet rsmaths = st.executeQuery(sql);
 int im = 1;
 %>
@@ -106,7 +106,7 @@ int im = 1;
 </table>
 <br>
 <%
-sql="Select * from ranking where categoria = 'Programación' order by puntuacion desc" ;
+sql="Select * from ranking where categoria = 'Programación' order by puntuacion desc , tiempo asc" ;
 ResultSet rsprog = st.executeQuery(sql);
 int ip = 1;
 %>
@@ -131,7 +131,7 @@ int ip = 1;
 <br>
 
 <%
-sql="Select * from ranking where categoria = 'Random' order by puntuacion desc";
+sql="Select * from ranking where categoria = 'Random' order by puntuacion desc , tiempo asc";
 ResultSet rsrand = st.executeQuery(sql);
 int ir = 1;
 %>
