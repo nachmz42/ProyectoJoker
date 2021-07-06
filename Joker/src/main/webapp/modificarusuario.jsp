@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="encabezado">
-<div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
+<div class="home"><a style="text-decoration:none; color:black" href="admin.jsp">Home</a></div>
 <div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
 <div class="admin">AD</div>
 </div>

@@ -9,8 +9,6 @@
 <link rel="stylesheet" href="STYLE/css/login.css"></link>
 
 <body >
-
-	
 	<form action="Login" method="post">
 		<div class="login">
 			<header class="container">
@@ -20,30 +18,13 @@
 			<div class="field-set">
 				<input class="usuario" id="txt-input" type="email" name="email" placeholder="email" required><br>
 				<input class="usuario" id="txt-input" type="text" name="password" placeholder="Password.." required><br> 
-				<input class="usuario" id="submit-input" type="submit" class=" btn submit " value="Login"> <span
-				style="color: white"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr")%></span><br>
-				<button class="btn submit registro"  id="registid" value="Registrarse"></span><a href="registro.jsp">Registrarse</a></button><br>
+				<input class="usuario" id="submit-input" type="submit" class=" btn submit " value="Login"> 
+				<span style="color: white"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr")%></span><br>
+				<button class="btn submit registro"  id="registid" value="Registrarse"><a href="registro.jsp"> Registrarse</a></button>
+				 
 			</div>
 		</div>
-
 	</form>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 134f6f77d29cec91371d1e5676738775e580c72b
-
-
-</body>
-
-<<<<<<< HEAD
-=======
-
-
-</body>
-
-
-</body>
-
->>>>>>> 134f6f77d29cec91371d1e5676738775e580c72b
 </html>

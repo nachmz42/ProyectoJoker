@@ -60,11 +60,11 @@ public class ServletAltausuario extends HttpServlet {
 		if(rs=true) {
 			String Mensaje= "Usuario creado correctamente";
 			request.getSession().setAttribute("Mensaje", Mensaje);
-			response.sendRedirect("añadirusuario.jsp");
+			response.sendRedirect("admin.jsp");
 		}else {
 			String Mensaje1= "Error, usuario no se ha podido dar de alta, compruebe correo";
 			request.getSession().setAttribute("Mensaje",Mensaje1 );
-			response.sendRedirect("añadirusuario.jsp");
+			response.sendRedirect("admin.jsp");
 			
 		}
 		

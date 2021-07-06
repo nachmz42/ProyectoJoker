@@ -12,8 +12,8 @@
 
 	<header>
 		<nav>
-			<a href="index.jsp">Home</a>
-			 <a href="#">Ranking</a>
+			<a href="usuarios.jsp">Home</a>
+			 <a href="ranking.jsp">Ranking</a>
 			  <a href="Logout">Exit</a>
 		</nav>
 

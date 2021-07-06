@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 import com.joker.modelo.Usuario;
 import com.joker.modelo.UsuarioDAO;
 
@@ -56,15 +57,19 @@ public class ServletResgistro extends HttpServlet {
 		System.out.println("EDAD: " + edadNum);
 		
 		
-		if(rs=true) {
-			request.getSession().setAttribute("Mensaje", "Usuario creado correctamente");
+		if(rs== true) {
+			
+			response.sendRedirect("index.jsp");
 		}else {
-			request.getSession().setAttribute("Mensaje", "Error, usuario no se ha podido dar de alta");
+			response.sendRedirect("registro.jsp");
+			String msgerr = "usuario no se ha creado, el correo introducido ya existe";
+			request.setAttribute("msgerr", msgerr);
+			}
 			
 		}
-		response.sendRedirect("index.jsp");
+		
 		
 		
 }
-}
+
 

@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="encabezado">
-<div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
+<div class="home"><a style="text-decoration:none; color:black" href="admin.jsp">Home</a></div>
 <div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
 <div class="admin">AD</div>
 </div>
@@ -18,6 +18,7 @@
 <div class="admin2"><a style="text-decoration:none; color:black"  href="modificarusuario.jsp">Modificar usuario</a></div><br>
 <div class="admin2"><a style="text-decoration:none; color:black" href="eliminarusuario.jsp">Eliminar usuario</a></div><br>
 <div class="admin2"><a style="text-decoration:none; color:black" href="listado.jsp">Listado usuarios</a></div><br>
+<div class="admin2"><a style="text-decoration:none; color:black" href="listadosugerencias.jsp">Listado sugerencias</a></div><br>
 <div class="admin2"><a style="text-decoration:none; color:black" href="AMDPregTabla.jsp">Añadir/Eliminar/Modificar pregunta</a></div><br>
 </div>
 

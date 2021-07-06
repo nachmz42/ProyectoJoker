@@ -10,8 +10,47 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Ranking</title>
+<style>
+table {
+	width: 100%;
+	border: 1px solid #000;
+}
+
+th, td {
+	width: 25%;
+	text-align: justify;
+	vertical-align: 20px;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	padding: 0.3em;
+	caption-side: bottom;
+}
+
+caption {
+	font: Arial;
+	font-size: 20px;
+	margin-top: collapse;
+	padding: 0.3em;
+	color: #F93208 ;
+	background: #FDEDEC;
+}
+
+th {
+	background: #eee;
+}
+</style>
+<link rel="stylesheet" href="STYLE/css/tabla.css"></link>
 </head>
 <body>
+
+<header>
+		<nav>
+			<a href="usuarios.jsp">Home</a>
+			  <a href="Logout">Exit</a>
+		</nav>
+
+		<h1>Ranking</h1>
+	</header>
 <%
 Connection con = Conexion.getInstance().getConnection();
 String sql="Select * from ranking where categoria = 'Cultura General' order by puntuacion desc" ;

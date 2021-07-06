@@ -27,15 +27,16 @@
       <input class="campos" id="txt-input" type="text" placeholder="Apellidos"   name="apellidos">
       <br>
 
-      <input class="campos" id="txt-input" type="number" placeholder="Edad"   name="edad">
+      <input class="campos" id="txt-input" type="text" placeholder="Edad"   name="edad">
       <br>
     
       <input class="campos" id="txt-input" type="email" placeholder="Email"   name="email">
       <br>
     
-      <input class=campos id="txt-input" type="password" placeholder="Password"   name="password">
+      <input class="campos" id="txt-input" type="password" placeholder="Password"   name="password">
       <br>
       <button class="btn submits registrar" value="Enviar"> Registratrse </button>
+      <span style="color: white"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr")%></span>
   
       <button class="btn submits borrar" value="Borrar">Borrar</button>
    </div>
