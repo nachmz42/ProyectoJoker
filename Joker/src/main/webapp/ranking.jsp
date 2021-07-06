@@ -10,6 +10,36 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Ranking</title>
+<style>
+table {
+	width: 100%;
+	border: 1px solid #000;
+}
+
+th, td {
+	width: 25%;
+	text-align: justify;
+	vertical-align: 20px;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	padding: 0.3em;
+	caption-side: bottom;
+}
+
+caption {
+	font: Arial;
+	font-size: 20px;
+	margin-top: collapse;
+	padding: 0.3em;
+	color: #F93208 ;
+	background: #FDEDEC;
+}
+
+th {
+	background: #eee;
+}
+</style>
+<link rel="stylesheet" href="STYLE/css/tabla.css"></link>
 </head>
 <body>
 

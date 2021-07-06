@@ -20,7 +20,7 @@
 				<input class="usuario" id="txt-input" type="text" name="password" placeholder="Password.." required><br> 
 				<input class="usuario" id="submit-input" type="submit" class=" btn submit " value="Login"> 
 				<span style="color: white"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr")%></span><br>
-				<button class="btn submit registro"  id="registid" value="Registrarse"> Registrarse</button>
+				<button class="btn submit registro"  id="registid" value="Registrarse"><a href="registro.jsp"> Registrarse</a></button>
 				 
 			</div>
 		</div>

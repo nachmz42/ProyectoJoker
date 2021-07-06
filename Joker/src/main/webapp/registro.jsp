@@ -36,6 +36,7 @@
       <input class="campos" id="txt-input" type="password" placeholder="Password"   name="password">
       <br>
       <button class="btn submits registrar" value="Enviar"> Registratrse </button>
+      <span style="color: white"><%=(request.getAttribute("msgerr") == null) ? "" : request.getAttribute("msgerr")%></span>
   
       <button class="btn submits borrar" value="Borrar">Borrar</button>
    </div>
