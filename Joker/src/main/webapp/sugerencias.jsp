@@ -10,8 +10,8 @@
 <body>
 <header>
 		<nav>
-			<a href="usuarios.jsp">Home</a>
-			  <a href="Logout">Exit</a>
+			<div class="home"><a href="usuarios.jsp" style="text-decoration:none; color:black" >Home</a></div>
+			  <div class="logout"><a href="Logout" style="text-decoration:none; color:black">Exit</a></div>
 		</nav>
 
 		
