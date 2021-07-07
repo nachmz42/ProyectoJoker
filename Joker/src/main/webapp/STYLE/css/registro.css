@@ -21,7 +21,7 @@ opacity: .95;
 form {
     align-items: center;
     width: 35%;
-    min-height: 700px;
+    min-height: 600px;
     height: auto;
     border-radius: 5px;
     margin: 2% auto;
@@ -33,7 +33,7 @@ form {
 
 form .container {
     width: 50%;
-    height: 400px;
+    height: 300px;
     align-items: center;
     display: -webkit-flex;
     display: flex;
