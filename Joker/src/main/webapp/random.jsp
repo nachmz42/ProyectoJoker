@@ -11,6 +11,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Random</title>
+<link rel="stylesheet" href="STYLE/css/culturaGeneral.css"></link>
 </head>
 <body>
 
@@ -180,10 +181,13 @@
 
 	<form action="ServletCategorias" method="post">
 	<input type="hidden" name="inicial" value="<%=ini%>">
-	<br>
-	<p> <%=pregsCult[0].getPregunta() %></p>
 	
-	<select name="pregunta1">
+	<h1 id="titulo">Random quiz!</h1>
+		<h4>concentrate!  vas e necitarlo para este quiz random!</h4>
+	<br>
+	<p class="pregunta"> <%=pregsCult[0].getPregunta() %></p>
+	
+	<select name="pregunta1" class="select" id="slct">
 
     	<option value="<%=pregsCult[0].getRs1() %>"><%=pregsCult[0].getRs1() %></option>
     	<option value="<%=pregsCult[0].getRs2() %>"><%=pregsCult[0].getRs2() %></option>
@@ -193,9 +197,9 @@
   	</select>
   	<input type="hidden" name="p1rsc" value=<%= pregsCult[0].getRsc()%>>
   	<br>
-  	<p> <%=pregsMaths[0].getPregunta() %></p>
+  	<p class="pregunta"> <%=pregsMaths[0].getPregunta() %></p>
 	
-	<select name="pregunta2">
+	<select name="pregunta2" class="select" id="slct">
 
     	<option value="<%=pregsMaths[0].getRs1() %>"><%=pregsMaths[0].getRs1() %></option>
     	<option value="<%=pregsMaths[0].getRs2() %>"><%=pregsMaths[0].getRs2() %></option>
@@ -206,9 +210,9 @@
   	<input type="hidden" name="p2rsc" value=<%= pregsMaths[0].getRsc()%>>
 	<br>
   	
-  	<p> <%=pregsProg[0].getPregunta() %></p>
+  	<p class="pregunta"> <%=pregsProg[0].getPregunta() %></p>
 	
-	<select name="pregunta3">
+	<select name="pregunta3" class="select" id="slct">
 
     	<option value="<%=pregsProg[0].getRs1() %>"><%=pregsProg[0].getRs1() %></option>
     	<option value="<%=pregsProg[0].getRs2() %>"><%=pregsProg[0].getRs2() %></option>
@@ -218,9 +222,9 @@
   	</select>
   	<input type="hidden" name="p3rsc" value=<%= pregsProg[0].getRsc()%>>
   	<br>
-  		<p> <%=pregsCult[1].getPregunta() %></p>
+  		<p class="pregunta"> <%=pregsCult[1].getPregunta() %></p>
 	
-	<select name="pregunta4">
+	<select name="pregunta4" class="select" id="slct">
 
     	<option value="<%=pregsCult[1].getRs1() %>"><%=pregsCult[1].getRs1() %></option>
     	<option value="<%=pregsCult[1].getRs2() %>"><%=pregsCult[1].getRs2() %></option>
@@ -230,9 +234,9 @@
   	</select>
   	<input type="hidden" name="p4rsc" value=<%= pregsCult[1].getRsc()%>>
   	<br>
-  	<p> <%=pregsMaths[1].getPregunta() %></p>
+  	<p class="pregunta"> <%=pregsMaths[1].getPregunta() %></p>
 	
-	<select name="pregunta5">
+	<select name="pregunta5" class="select" id="slct">
 
     	<option value="<%=pregsMaths[1].getRs1() %>"><%=pregsMaths[1].getRs1() %></option>
     	<option value="<%=pregsMaths[1].getRs2() %>"><%=pregsMaths[1].getRs2() %></option>
@@ -243,9 +247,9 @@
   	<input type="hidden" name="p5rsc" value=<%= pregsMaths[1].getRsc()%>>
 	<br>
   	
-  	<p> <%=pregsProg[1].getPregunta() %></p>
+  	<p class="pregunta"> <%=pregsProg[1].getPregunta() %></p>
 	<br>
-	<select name="pregunta6">
+	<select name="pregunta6" class="select" id="slct">
 
     	<option value="<%=pregsProg[1].getRs1() %>"><%=pregsProg[1].getRs1() %></option>
     	<option value="<%=pregsProg[1].getRs2() %>"><%=pregsProg[1].getRs2() %></option>
@@ -255,9 +259,9 @@
   	</select>
   	<input type="hidden" name="p6rsc" value=<%= pregsProg[1].getRsc()%>>
   	<br>
-  		<p> <%=pregsCult[0].getPregunta() %></p>
+  		<p class="pregunta"> <%=pregsCult[0].getPregunta() %></p>
 	
-	<select name="pregunta7">
+	<select name="pregunta7" class="select" id="slct">
 
     	<option value="<%=pregsCult[2].getRs1() %>"><%=pregsCult[2].getRs1() %></option>
     	<option value="<%=pregsCult[2].getRs2() %>"><%=pregsCult[2].getRs2() %></option>
@@ -267,10 +271,10 @@
   	</select>
   	<input type="hidden" name="p7rsc" value=<%= pregsCult[2].getRsc()%>>
   	
-  	<p> <%=pregsMaths[2].getPregunta() %></p>
+  	<p class="pregunta"> <%=pregsMaths[2].getPregunta() %></p>
   	<br>
 	
-	<select name="pregunta8">
+	<select name="pregunta8" class="select" id="slct">
 
     	<option value="<%=pregsMaths[2].getRs1() %>"><%=pregsMaths[2].getRs1() %></option>
     	<option value="<%=pregsMaths[2].getRs2() %>"><%=pregsMaths[2].getRs2() %></option>
@@ -282,9 +286,9 @@
   	<br>
 
   	
-  	<p> <%=pregsProg[2].getPregunta() %></p>
+  	<p class="pregunta"> <%=pregsProg[2].getPregunta() %></p>
 	
-	<select name="pregunta9">
+	<select name="pregunta9" class="select" id="slct">
 
     	<option value="<%=pregsProg[2].getRs1() %>"><%=pregsProg[2].getRs1() %></option>
     	<option value="<%=pregsProg[2].getRs2() %>"><%=pregsProg[2].getRs2() %></option>
@@ -298,7 +302,7 @@
   	<input type="hidden" name="p10rsc" value="No">
   	
   	<input type="hidden" name="categoria" value="Random">	
-  	<input type="submit" value="Enviar Respuestas">	
+  	<button class="boton" type="submit" value="Enviar Respuestas">Enviar Respuestas</button>
   	</form>
   	
   	

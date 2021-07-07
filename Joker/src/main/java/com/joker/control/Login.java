@@ -48,7 +48,7 @@ public class Login extends HttpServlet {
 					pageDest = "admin.jsp";
 					HttpSession sesion = request.getSession();
 					sesion.setAttribute("nombre", usu.getNombre());
-					sesion.setAttribute("apellido", usu.getApellidos());
+					sesion.setAttribute("apellidos", usu.getApellidos());
 					sesion.setAttribute("edad", usu.getEdad());
 					sesion.setAttribute("email", usu.getEmail());
 					sesion.setAttribute("rol", usu.getRol());
@@ -59,10 +59,11 @@ public class Login extends HttpServlet {
 					pageDest = "usuarios.jsp";
 					HttpSession sesion = request.getSession();
 					sesion.setAttribute("nombre", usu.getNombre());
-					sesion.setAttribute("apellido", usu.getApellidos());
+					sesion.setAttribute("apellidos", usu.getApellidos());
 					sesion.setAttribute("edad", usu.getEdad());
 					sesion.setAttribute("email", usu.getEmail());
 					sesion.setAttribute("rol", usu.getRol());
+					sesion.setAttribute("login", "on");
 					
 				
 				
