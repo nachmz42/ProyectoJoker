@@ -2,12 +2,53 @@ package com.joker.modelo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 import com.joker.services.Conexion;
 
 public class PreguntaDAO {
+	public Pregunta getPregunta(int id, String opcion) {
+		String SQL = "";
+		Pregunta p = new Pregunta();
+		
+		try {
+			Connection con = Conexion.getInstance().getConnection();
+			if(opcion.equals("m")) {
+				SQL ="Select * from categoria_maths where id_pregunta=?";
+			}else {if(opcion.equals("c")) {
+				SQL ="Select * from categoria_cultura where id_pregunta=?";
+			}else {if(opcion.equals("p")) {
+				SQL ="Select * from categoria_programacion where id_pregunta=?";
+						}
+					}
+				}
+			PreparedStatement pst = con.prepareStatement(SQL);
+
+			pst.setInt(1,id);
+			ResultSet rs = pst.executeQuery();
+			
+			while(rs.next()) {
+				p.setId(id);
+				p.setPregunta(rs.getString("pregunta"));
+				p.setRs1(rs.getString("rs1"));
+				p.setRs2(rs.getString("rs2"));
+				p.setRs3(rs.getString("rs3"));
+				p.setRs4(rs.getString("rs4"));
+				p.setRsc(rs.getString("rsc"));
+				
+			}
+			
+			}
+			catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		return p;
+	
+	}
+	
 	public void modPregunta(Pregunta preg, String opcion) {
 		String SQL = "";
 		try {

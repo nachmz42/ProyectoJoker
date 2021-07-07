@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 import com.joker.services.Conexion;
 
-public class Pregunta {
+public class Pregunta extends Object{
 	String pregunta,rs1,rs2,rs3,rs4,rsc;
 	int id;
 

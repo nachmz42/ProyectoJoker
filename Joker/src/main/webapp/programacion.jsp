@@ -142,7 +142,7 @@
     	
 
   	</select>
-  	<input type="hidden" name="p4rsc" value=<%= pregs[4].getRsc()%>>
+  	<input type="hidden" name="p5rsc" value=<%= pregs[4].getRsc()%>>
 	
 	<p> <%=pregs[5].getPregunta() %></p>
 	<select name="pregunta6">

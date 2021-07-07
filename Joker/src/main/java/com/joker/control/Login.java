@@ -63,7 +63,8 @@ public class Login extends HttpServlet {
 					sesion.setAttribute("edad", usu.getEdad());
 					sesion.setAttribute("email", usu.getEmail());
 					sesion.setAttribute("rol", usu.getRol());
-					
+					sesion.setAttribute("rol", usu.getRol());
+					sesion.setAttribute("login", "on");
 				
 				
 				
