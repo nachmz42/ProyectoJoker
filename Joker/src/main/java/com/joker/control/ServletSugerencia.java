@@ -33,7 +33,7 @@ public class ServletSugerencia extends HttpServlet {
 
 		nombre = (String) sesion.getAttribute("nombre");
 
-		 apellidos= (String) sesion.getAttribute("apellido");
+		 apellidos= (String) sesion.getAttribute("apellidos");
 		 
 		 sugerencias= request.getParameter("sugerencia");
 		 

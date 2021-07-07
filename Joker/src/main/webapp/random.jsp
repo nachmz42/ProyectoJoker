@@ -183,16 +183,16 @@
 	<input type="hidden" name="inicial" value="<%=ini%>">
 	
 	<h1 id="titulo">Random quiz!</h1>
-		<h4>concentrate!  vas e necitarlo para este quiz random!</h4>
+		<h4>concentrate!  vas a necitarlo para este quiz random!</h4>
 	<br>
 	<p class="pregunta"> <%=pregsCult[0].getPregunta() %></p>
 	
 	<select name="pregunta1" class="select" id="slct">
 
-    	<option value="<%=pregsCult[0].getRs1() %>"><%=pregsCult[0].getRs1() %></option>
-    	<option value="<%=pregsCult[0].getRs2() %>"><%=pregsCult[0].getRs2() %></option>
-    	<option value="<%=pregsCult[0].getRs3() %>"><%=pregsCult[0].getRs3() %></option>
-    	<option value="<%=pregsCult[0].getRs4() %>"><%=pregsCult[0].getRs4() %></option>
+    	<option value=<%=pregsCult[0].getRs1() %>><%=pregsCult[0].getRs1() %></option>
+    	<option value=<%=pregsCult[0].getRs2() %>><%=pregsCult[0].getRs2() %></option>
+    	<option value=<%=pregsCult[0].getRs3() %>><%=pregsCult[0].getRs3() %></option>
+    	<option value=<%=pregsCult[0].getRs4() %>><%=pregsCult[0].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p1rsc" value=<%= pregsCult[0].getRsc()%>>
@@ -201,10 +201,10 @@
 	
 	<select name="pregunta2" class="select" id="slct">
 
-    	<option value="<%=pregsMaths[0].getRs1() %>"><%=pregsMaths[0].getRs1() %></option>
-    	<option value="<%=pregsMaths[0].getRs2() %>"><%=pregsMaths[0].getRs2() %></option>
-    	<option value="<%=pregsMaths[0].getRs3() %>"><%=pregsMaths[0].getRs3() %></option>
-    	<option value="<%=pregsMaths[0].getRs4() %>"><%=pregsMaths[0].getRs4() %></option>
+    	<option value=<%=pregsMaths[0].getRs1() %>><%=pregsMaths[0].getRs1() %></option>
+    	<option value=<%=pregsMaths[0].getRs2() %>><%=pregsMaths[0].getRs2() %></option>
+    	<option value=<%=pregsMaths[0].getRs3() %>><%=pregsMaths[0].getRs3() %></option>
+    	<option value=<%=pregsMaths[0].getRs4() %>><%=pregsMaths[0].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p2rsc" value=<%= pregsMaths[0].getRsc()%>>
@@ -214,10 +214,10 @@
 	
 	<select name="pregunta3" class="select" id="slct">
 
-    	<option value="<%=pregsProg[0].getRs1() %>"><%=pregsProg[0].getRs1() %></option>
-    	<option value="<%=pregsProg[0].getRs2() %>"><%=pregsProg[0].getRs2() %></option>
-    	<option value="<%=pregsProg[0].getRs3() %>"><%=pregsProg[0].getRs3() %></option>
-    	<option value="<%=pregsProg[0].getRs4() %>"><%=pregsProg[0].getRs4() %></option>
+    	<option value=<%=pregsProg[0].getRs1() %>><%=pregsProg[0].getRs1() %></option>
+    	<option value=<%=pregsProg[0].getRs2() %>><%=pregsProg[0].getRs2() %></option>
+    	<option value=<%=pregsProg[0].getRs3() %>><%=pregsProg[0].getRs3() %></option>
+    	<option value=<%=pregsProg[0].getRs4() %>><%=pregsProg[0].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p3rsc" value=<%= pregsProg[0].getRsc()%>>
@@ -226,10 +226,10 @@
 	
 	<select name="pregunta4" class="select" id="slct">
 
-    	<option value="<%=pregsCult[1].getRs1() %>"><%=pregsCult[1].getRs1() %></option>
-    	<option value="<%=pregsCult[1].getRs2() %>"><%=pregsCult[1].getRs2() %></option>
-    	<option value="<%=pregsCult[1].getRs3() %>"><%=pregsCult[1].getRs3() %></option>
-    	<option value="<%=pregsCult[1].getRs4() %>"><%=pregsCult[1].getRs4() %></option>
+    	<option value=<%=pregsCult[1].getRs1() %>><%=pregsCult[1].getRs1() %></option>
+    	<option value=<%=pregsCult[1].getRs2() %>><%=pregsCult[1].getRs2() %></option>
+    	<option value=<%=pregsCult[1].getRs3() %>><%=pregsCult[1].getRs3() %></option>
+    	<option value=<%=pregsCult[1].getRs4() %>><%=pregsCult[1].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p4rsc" value=<%= pregsCult[1].getRsc()%>>
@@ -238,10 +238,10 @@
 	
 	<select name="pregunta5" class="select" id="slct">
 
-    	<option value="<%=pregsMaths[1].getRs1() %>"><%=pregsMaths[1].getRs1() %></option>
-    	<option value="<%=pregsMaths[1].getRs2() %>"><%=pregsMaths[1].getRs2() %></option>
-    	<option value="<%=pregsMaths[1].getRs3() %>"><%=pregsMaths[1].getRs3() %></option>
-    	<option value="<%=pregsMaths[1].getRs4() %>"><%=pregsMaths[1].getRs4() %></option>
+    	<option value=<%=pregsMaths[1].getRs1() %>><%=pregsMaths[1].getRs1() %></option>
+    	<option value=<%=pregsMaths[1].getRs2() %>><%=pregsMaths[1].getRs2() %></option>
+    	<option value=<%=pregsMaths[1].getRs3() %>><%=pregsMaths[1].getRs3() %></option>
+    	<option value=<%=pregsMaths[1].getRs4() %>><%=pregsMaths[1].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p5rsc" value=<%= pregsMaths[1].getRsc()%>>
@@ -251,22 +251,22 @@
 	<br>
 	<select name="pregunta6" class="select" id="slct">
 
-    	<option value="<%=pregsProg[1].getRs1() %>"><%=pregsProg[1].getRs1() %></option>
-    	<option value="<%=pregsProg[1].getRs2() %>"><%=pregsProg[1].getRs2() %></option>
-    	<option value="<%=pregsProg[1].getRs3() %>"><%=pregsProg[1].getRs3() %></option>
-    	<option value="<%=pregsProg[1].getRs4() %>"><%=pregsProg[1].getRs4() %></option>
+    	<option value=<%=pregsProg[1].getRs1() %>><%=pregsProg[1].getRs1() %></option>
+    	<option value=<%=pregsProg[1].getRs2() %>><%=pregsProg[1].getRs2() %></option>
+    	<option value=<%=pregsProg[1].getRs3() %>><%=pregsProg[1].getRs3() %></option>
+    	<option value=<%=pregsProg[1].getRs4() %>><%=pregsProg[1].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p6rsc" value=<%= pregsProg[1].getRsc()%>>
   	<br>
-  		<p class="pregunta"> <%=pregsCult[0].getPregunta() %></p>
+  		<p class="pregunta"> <%=pregsCult[2].getPregunta() %></p>
 	
 	<select name="pregunta7" class="select" id="slct">
 
-    	<option value="<%=pregsCult[2].getRs1() %>"><%=pregsCult[2].getRs1() %></option>
-    	<option value="<%=pregsCult[2].getRs2() %>"><%=pregsCult[2].getRs2() %></option>
-    	<option value="<%=pregsCult[2].getRs3() %>"><%=pregsCult[2].getRs3() %></option>
-    	<option value="<%=pregsCult[2].getRs4() %>"><%=pregsCult[2].getRs4() %></option>
+    	<option value=<%=pregsCult[2].getRs1() %>><%=pregsCult[2].getRs1() %></option>
+    	<option value=<%=pregsCult[2].getRs2() %>><%=pregsCult[2].getRs2() %></option>
+    	<option value=<%=pregsCult[2].getRs3() %>><%=pregsCult[2].getRs3() %></option>
+    	<option value=<%=pregsCult[2].getRs4() %>><%=pregsCult[2].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p7rsc" value=<%= pregsCult[2].getRsc()%>>
@@ -276,13 +276,13 @@
 	
 	<select name="pregunta8" class="select" id="slct">
 
-    	<option value="<%=pregsMaths[2].getRs1() %>"><%=pregsMaths[2].getRs1() %></option>
-    	<option value="<%=pregsMaths[2].getRs2() %>"><%=pregsMaths[2].getRs2() %></option>
-    	<option value="<%=pregsMaths[2].getRs3() %>"><%=pregsMaths[2].getRs3() %></option>
-    	<option value="<%=pregsMaths[2].getRs4() %>"><%=pregsMaths[2].getRs4() %></option>
+    	<option value=<%=pregsMaths[2].getRs1() %>><%=pregsMaths[2].getRs1() %></option>
+    	<option value=<%=pregsMaths[2].getRs2() %>><%=pregsMaths[2].getRs2() %></option>
+    	<option value=<%=pregsMaths[2].getRs3() %>><%=pregsMaths[2].getRs3() %></option>
+    	<option value=<%=pregsMaths[2].getRs4() %>><%=pregsMaths[2].getRs4() %></option>
 		
   	</select>
-  	<input type="hidden" name="p8rsc" value=<%= pregsMaths[0].getRsc()%>>
+  	<input type="hidden" name="p8rsc" value=<%= pregsMaths[2].getRsc()%>>
   	<br>
 
   	
@@ -290,10 +290,10 @@
 	
 	<select name="pregunta9" class="select" id="slct">
 
-    	<option value="<%=pregsProg[2].getRs1() %>"><%=pregsProg[2].getRs1() %></option>
-    	<option value="<%=pregsProg[2].getRs2() %>"><%=pregsProg[2].getRs2() %></option>
-    	<option value="<%=pregsProg[2].getRs3() %>"><%=pregsProg[2].getRs3() %></option>
-    	<option value="<%=pregsProg[2].getRs4() %>"><%=pregsProg[2].getRs4() %></option>
+    	<option value=<%=pregsProg[2].getRs1() %>><%=pregsProg[2].getRs1() %></option>
+    	<option value=<%=pregsProg[2].getRs2() %>><%=pregsProg[2].getRs2() %></option>
+    	<option value=<%=pregsProg[2].getRs3() %>><%=pregsProg[2].getRs3() %></option>
+    	<option value=<%=pregsProg[2].getRs4() %>><%=pregsProg[2].getRs4() %></option>
 		
   	</select>
   	<br>

@@ -50,7 +50,7 @@ public class ServletCategorias extends HttpServlet {
 		HttpSession sesion = request.getSession();
 		String email = (String) sesion.getAttribute("email");
 		String nombre = (String) sesion.getAttribute("nombre");
-		String ape = (String) sesion.getAttribute("apellido");
+		String ape = (String) sesion.getAttribute("apellidos");
 		String cat = request.getParameter("categoria");
 		PreguntaDAO pdao = new PreguntaDAO();
 	
@@ -77,6 +77,9 @@ public class ServletCategorias extends HttpServlet {
 		rsc10= request.getParameter("p10rsc");
 		String respuestas[] = {rs1,rs2,rs3,rs4,rs5,rs6,rs7,rs8,rs9,rs10};
 		String respcorrectas[] = { rsc1,rsc2,rsc3,rsc4,rsc5,rsc6,rsc7,rsc8,rsc9,rsc10};
+		
+		
+        
 		
 		for(int i = 0; i<=9;i++) {
 			if(respuestas[i].equals(respcorrectas[i])) {

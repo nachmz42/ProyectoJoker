@@ -92,10 +92,10 @@
 	
 	<select name="pregunta1"  class="select" id="slct">
 
-    	<option value="<%=pregs[0].getRs1() %>"><%=pregs[0].getRs1() %></option>
-    	<option value="<%=pregs[0].getRs2() %>"><%=pregs[0].getRs2() %></option>
-    	<option value="<%=pregs[0].getRs3() %>"><%=pregs[0].getRs3() %></option>
-    	<option value="<%=pregs[0].getRs4() %>"><%=pregs[0].getRs4() %></option>
+    	<option value=<%=pregs[0].getRs1() %>><%=pregs[0].getRs1() %></option>
+    	<option value=<%=pregs[0].getRs2() %>><%=pregs[0].getRs2() %></option>
+    	<option value=<%=pregs[0].getRs3() %>><%=pregs[0].getRs3() %></option>
+    	<option value=<%=pregs[0].getRs4() %>><%=pregs[0].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p1rsc" value=<%= pregs[0].getRsc()%>>
@@ -103,10 +103,10 @@
 	<p class="pregunta"> <%=pregs[1].getPregunta() %></p>
 	<select name="pregunta2"  class="select" id="select">
 
-    	<option value="<%=pregs[1].getRs1() %>"><%=pregs[1].getRs1() %></option>
-    	<option value="<%=pregs[1].getRs2() %>"><%=pregs[1].getRs2() %></option>
-    	<option value="<%=pregs[1].getRs3() %>"><%=pregs[1].getRs3() %></option>
-    	<option value="<%=pregs[1].getRs4() %>"><%=pregs[1].getRs4() %></option>
+    	<option value=<%=pregs[1].getRs1() %>><%=pregs[1].getRs1() %></option>
+    	<option value=<%=pregs[1].getRs2() %>><%=pregs[1].getRs2() %></option>
+    	<option value=<%=pregs[1].getRs3() %>><%=pregs[1].getRs3() %></option>
+    	<option value=<%=pregs[1].getRs4() %>><%=pregs[1].getRs4() %></option>
 		
   	</select>
   	<input type="hidden" name="p2rsc" value=<%= pregs[1].getRsc()%>>	
@@ -114,10 +114,10 @@
 	<p class="pregunta"> <%=pregs[2].getPregunta() %></p>
 	<select name="pregunta3" class="select" id="select">
 
-    	<option value="<%=pregs[2].getRs1() %>"><%=pregs[2].getRs1() %></option>
-    	<option value="<%=pregs[2].getRs2() %>"><%=pregs[2].getRs2() %></option>
-    	<option value="<%=pregs[2].getRs3() %>"><%=pregs[2].getRs3() %></option>
-    	<option value="<%=pregs[2].getRs4() %>"><%=pregs[2].getRs4() %></option>
+    	<option value=<%=pregs[2].getRs1() %>><%=pregs[2].getRs1() %></option>
+    	<option value=<%=pregs[2].getRs2() %>><%=pregs[2].getRs2() %></option>
+    	<option value=<%=pregs[2].getRs3() %>><%=pregs[2].getRs3() %></option>
+    	<option value=<%=pregs[2].getRs4() %>><%=pregs[2].getRs4() %></option>
     	
 
   	</select>
@@ -127,10 +127,10 @@
 	<p class="pregunta"> <%=pregs[3].getPregunta() %></p>
 	<select name="pregunta4"  class="select" id="select">
 
-    	<option value="<%=pregs[3].getRs1() %>"><%=pregs[3].getRs1() %></option>
-    	<option value="<%=pregs[3].getRs2() %>"><%=pregs[3].getRs2() %></option>
-    	<option value="<%=pregs[3].getRs3() %>"><%=pregs[3].getRs3() %></option>
-    	<option value="<%=pregs[3].getRs4() %>"><%=pregs[3].getRs4() %></option>
+    	<option value=<%=pregs[3].getRs1() %>><%=pregs[3].getRs1() %></option>
+    	<option value=<%=pregs[3].getRs2() %>><%=pregs[3].getRs2() %></option>
+    	<option value=<%=pregs[3].getRs3() %>><%=pregs[3].getRs3() %></option>
+    	<option value=<%=pregs[3].getRs4() %>><%=pregs[3].getRs4() %></option>
     	
 
   	</select>
@@ -139,22 +139,22 @@
 	<p class="pregunta"> <%=pregs[4].getPregunta() %></p>
 	<select name="pregunta5" class="select" id="select">
 
-    	<option value="<%=pregs[4].getRs1() %>"><%=pregs[4].getRs1() %></option>
-    	<option value="<%=pregs[4].getRs2() %>"><%=pregs[4].getRs2() %></option>
-    	<option value="<%=pregs[4].getRs3() %>"><%=pregs[4].getRs3() %></option>
-    	<option value="<%=pregs[4].getRs4() %>"><%=pregs[4].getRs4() %></option>
+    	<option value=<%=pregs[4].getRs1() %>><%=pregs[4].getRs1() %></option>
+    	<option value=<%=pregs[4].getRs2() %>><%=pregs[4].getRs2() %></option>
+    	<option value=<%=pregs[4].getRs3() %>><%=pregs[4].getRs3() %></option>
+    	<option value=<%=pregs[4].getRs4() %>><%=pregs[4].getRs4() %></option>
     	
 
   	</select>
-  	<input type="hidden" name="p4rsc" value=<%= pregs[4].getRsc()%>>
+  	<input type="hidden" name="p5rsc" value=<%= pregs[4].getRsc()%>>
 	
 	<p class="pregunta"> <%=pregs[5].getPregunta() %></p>
 	<select name="pregunta6"  class="select" id="select">
 
-    	<option value="<%=pregs[5].getRs1() %>"><%=pregs[5].getRs1() %></option>
-    	<option value="<%=pregs[5].getRs2() %>"><%=pregs[5].getRs2() %></option>
-    	<option value="<%=pregs[5].getRs3() %>"><%=pregs[5].getRs3() %></option>
-    	<option value="<%=pregs[5].getRs4() %>"><%=pregs[5].getRs4() %></option>
+    	<option value=<%=pregs[5].getRs1() %>><%=pregs[5].getRs1() %></option>
+    	<option value=<%=pregs[5].getRs2() %>><%=pregs[5].getRs2() %></option>
+    	<option value=<%=pregs[5].getRs3() %>><%=pregs[5].getRs3() %></option>
+    	<option value=<%=pregs[5].getRs4() %>><%=pregs[5].getRs4() %></option>
     	
 
   	</select>
@@ -163,10 +163,10 @@
 	<p class="pregunta"> <%=pregs[6].getPregunta() %></p>
 	<select name="pregunta7" class="select" id="select">
 
-    	<option value="<%=pregs[6].getRs1() %>"><%=pregs[6].getRs1() %></option>
-    	<option value="<%=pregs[6].getRs2() %>"><%=pregs[6].getRs2() %></option>
-    	<option value="<%=pregs[6].getRs3() %>"><%=pregs[6].getRs3() %></option>
-    	<option value="<%=pregs[6].getRs4() %>"><%=pregs[6].getRs4() %></option>
+    	<option value=<%=pregs[6].getRs1() %>><%=pregs[6].getRs1() %></option>
+    	<option value=<%=pregs[6].getRs2() %>><%=pregs[6].getRs2() %></option>
+    	<option value=<%=pregs[6].getRs3() %>><%=pregs[6].getRs3() %></option>
+    	<option value=<%=pregs[6].getRs4() %>><%=pregs[6].getRs4() %></option>
     	
 
   	</select>
@@ -175,10 +175,10 @@
 	<p class="pregunta"> <%=pregs[7].getPregunta() %></p>
 	<select name="pregunta8" class="select" id="select">
 
-    	<option value="<%=pregs[7].getRs1() %>"><%=pregs[7].getRs1() %></option>
-    	<option value="<%=pregs[7].getRs2() %>"><%=pregs[7].getRs2() %></option>
-    	<option value="<%=pregs[7].getRs3() %>"><%=pregs[7].getRs3() %></option>
-    	<option value="<%=pregs[7].getRs4() %>"><%=pregs[7].getRs4() %></option>
+    	<option value=<%=pregs[7].getRs1() %>><%=pregs[7].getRs1() %></option>
+    	<option value=<%=pregs[7].getRs2() %>><%=pregs[7].getRs2() %></option>
+    	<option value=<%=pregs[7].getRs3() %>><%=pregs[7].getRs3() %></option>
+    	<option value=<%=pregs[7].getRs4() %>><%=pregs[7].getRs4() %></option>
     	
 
   	</select>
@@ -187,10 +187,10 @@
 	<p class="pregunta"> <%=pregs[8].getPregunta() %></p>
 	<select name="pregunta9" class="select" id="select" >
 
-    	<option value="<%=pregs[8].getRs1() %>"><%=pregs[8].getRs1() %></option>
-    	<option value="<%=pregs[8].getRs2() %>"><%=pregs[8].getRs2() %></option>
-    	<option value="<%=pregs[8].getRs3() %>"><%=pregs[8].getRs3() %></option>
-    	<option value="<%=pregs[8].getRs4() %>"><%=pregs[8].getRs4() %></option>
+    	<option value=<%=pregs[8].getRs1() %>><%=pregs[8].getRs1() %></option>
+    	<option value=<%=pregs[8].getRs2() %>><%=pregs[8].getRs2() %></option>
+    	<option value=<%=pregs[8].getRs3() %>><%=pregs[8].getRs3() %></option>
+    	<option value=<%=pregs[8].getRs4() %>><%=pregs[8].getRs4() %></option>
     	
 
   	</select>
@@ -199,10 +199,10 @@
 	<p class="pregunta"> <%=pregs[9].getPregunta() %></p>
 		<select name="pregunta10" class="select" id="select">
 
-    	<option value="<%=pregs[9].getRs1() %>"><%=pregs[9].getRs1() %></option>
-    	<option value="<%=pregs[9].getRs2() %>"><%=pregs[9].getRs2() %></option>
-    	<option value="<%=pregs[9].getRs3() %>"><%=pregs[9].getRs3() %></option>
-    	<option value="<%=pregs[9].getRs4() %>"><%=pregs[9].getRs4() %></option>
+    	<option value=<%=pregs[9].getRs1() %>><%=pregs[9].getRs1() %></option>
+    	<option value=<%=pregs[9].getRs2() %>><%=pregs[9].getRs2() %></option>
+    	<option value=<%=pregs[9].getRs3() %>><%=pregs[9].getRs3() %></option>
+    	<option value=<%=pregs[9].getRs4() %>><%=pregs[9].getRs4() %></option>
     	
 
   	</select>

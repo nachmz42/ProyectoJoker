@@ -16,6 +16,8 @@ import com.joker.modelo.PreguntaDAO;
 public class pruebas {
 
 	public static void main(String[] args) throws SQLException {
+		
+		
 
 	}
 }

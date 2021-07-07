@@ -12,7 +12,8 @@
 <div class="encabezado">
 <div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
 <div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
-<div class="admin"><%= sesion.getAttribute("nombre") %> <%= sesion.getAttribute("apellidos") %></div><br>
+<div class="admin"><%= sesion.getAttribute("nombre") %></div>
+<div class="admin1"><%= sesion.getAttribute("apellidos") %></div>
 
 </div>
 <div class="cuerpo">
