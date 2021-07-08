@@ -34,8 +34,9 @@
       <br>
     
       <input class="campos" id="txt-input" type="password" placeholder="Password"   name="password">
+      <input class="campos" type="hidden" name="rol" value="invitado">
       <br>
-      <input  class="campos" type="file" name="fichero" value="" id="btn" >
+      <input  class="campos" type="file" name="fichero" value="null" id="btn" >
       <br>
       <button class="btn submits registrar" value="Enviar"> Registratrse </button>
   
