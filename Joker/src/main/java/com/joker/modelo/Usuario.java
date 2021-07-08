@@ -1,5 +1,7 @@
 package com.joker.modelo;
 
+import java.io.InputStream;
+
 public class Usuario {
 
 	private String nombre;
@@ -13,6 +15,20 @@ public class Usuario {
 	private String pass;
 
 	private String rol;
+	
+	private InputStream img;
+	
+
+	public Usuario(String nombre, String apellidos, int edad, String email, String pass, String rol, InputStream img) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.edad = edad;
+		this.email = email;
+		this.pass = pass;
+		this.rol = "invitado";
+		this.img = img;
+	}
 
 	public Usuario() {
 
@@ -48,6 +64,16 @@ public class Usuario {
 		this.pass = pass;
 	}
 
+	
+	public InputStream getImg() {
+		return img;
+	}
+
+	public void setImg(InputStream img) {
+		this.img = img;
+	}
+
+	
 	public String getNombre() {
 
 		return nombre;

@@ -1,6 +1,8 @@
 
 package com.joker.modelo;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.sql.Connection;
 
 import java.sql.PreparedStatement;
@@ -54,7 +56,7 @@ public class UsuarioDAO {
 	
 	public boolean altaUsuario(Usuario u) {
 
-		String sql = "INSERT INTO usuarios(nombre,apellidos,edad ,email,pass,rol) values(?,?,?,?,?,?) ";
+		String sql = "INSERT INTO usuarios(nombre,apellidos,edad ,email,pass,rol,img) values(?,?,?,?,?,?,?) ";
 		
 
 		try {
@@ -73,6 +75,8 @@ public class UsuarioDAO {
 			pst.setString(5, u.getPass());
 			
 			pst.setString(6, u.getRol());
+			
+			pst.setBlob(7, u.getImg());
 
 			pst.executeUpdate();
 			
@@ -181,6 +185,12 @@ public class UsuarioDAO {
 			u.setPass(rs.getString("pass"));
 
 			u.setRol(rs.getString("rol"));
+			
+			byte[] b = rs.getBytes("img");
+			if(b!=null) {
+			InputStream img = new ByteArrayInputStream(b);
+			u.setImg(img);
+			}
 
 		}
 
