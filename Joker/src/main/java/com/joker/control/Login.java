@@ -33,7 +33,7 @@ public class Login extends HttpServlet {
 
 		try {
 			usu = udao.login(email, pass);
-			
+			request.setAttribute("usu", usu);
 			
 			// usuario existe en la BDD
 		
@@ -63,14 +63,10 @@ public class Login extends HttpServlet {
 					sesion.setAttribute("edad", usu.getEdad());
 					sesion.setAttribute("email", usu.getEmail());
 					sesion.setAttribute("rol", usu.getRol());
+					sesion.setAttribute("img",usu.getImg());
 					sesion.setAttribute("login", "on");
-					
-				
-				
-				
-				
-				
-			}
+
+		}
 			}
 
 				else {

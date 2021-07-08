@@ -37,6 +37,7 @@ th {
 	background: #eee;
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="STYLE/css/tabla.css"></link>
 </head>
 <body>
@@ -68,6 +69,7 @@ th {
 			<th>Email</th>
 			<th>password</th>
 			<th>Rol</th>
+			<th>Acciones</th>
 			
 
 		</tr>
@@ -78,6 +80,13 @@ th {
 			<td><%= rs.getString("email")%></td>
 			<td><%= rs.getString("pass")%></td>
 			<td><%= rs.getString("rol")%></td>
+			<td><a style="text-decoration: none; color: black"
+				href="ServletModificarusuario?email=<%=rs.getString("email") %>">Modificar</a>
+				<i class="fa fa-edit" aria-hidden="true"></i> <a
+				style="text-decoration: none; color: black"
+				href="ServletEliminarusuario?email=<%= rs.getString("email")%>">
+					Eliminar<i class="fa fa-trash" aria-hidden="true"></i>
+			</a></td>
 			
 
 			<%  } rs.close();%>

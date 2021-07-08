@@ -1,6 +1,8 @@
 package com.joker.control;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +16,21 @@ import com.joker.modelo.UsuarioDAO;
 
 @WebServlet("/ServletEliminarusuario")
 public class ServletEliminarusuario extends HttpServlet {
-	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		UsuarioDAO udao = new UsuarioDAO();
+		
+		String email = request.getParameter("email");
+		Usuario u = udao.getUser(email);
+		
+		
+		String pass = u.getPass();
+		
+		udao.BorrarUsuario(email, pass);
+		
+		RequestDispatcher rd = request.getRequestDispatcher("listado.jsp");
+		rd.forward(request, response);
+		
+	}
  
 	
 

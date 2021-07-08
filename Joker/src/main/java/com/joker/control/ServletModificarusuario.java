@@ -1,6 +1,8 @@
 package com.joker.control;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,7 +23,19 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/ServletModificarusuario")
 public class ServletModificarusuario extends HttpServlet {
 	
-  
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		UsuarioDAO udao = new UsuarioDAO();
+		
+		String email = request.getParameter("email");
+		Usuario u = udao.getUser(email);
+		
+		request.setAttribute("user", u);
+		
+		
+		RequestDispatcher rd = request.getRequestDispatcher("modificarusuario.jsp");
+		rd.forward(request, response);
+		
+	}
     
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
