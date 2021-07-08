@@ -7,13 +7,18 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="STYLE/css/añadiruuario.css"></link>
 </head>
-<body>
+<body class="wrapper">
 
-<div class="encabezado">
-<div class="home"><a style="text-decoration:none; color:black" href="admin.jsp">Home</a></div>
-<div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
-<div class="admin">AD</div>
-</div>
+    <header>
+        <button class="home"><a   href="index.jsp">Home</a></button></b>
+        <button class="logout"><a href="Logout">Logout</a></button>
+        <nav class="encabezado">
+            <div class="admin">ADMIN</div>
+        </nav>
+    
+    </header>
+
+
 <div class= "cuerpo">
 <div class= "testbox">
 

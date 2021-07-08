@@ -10,7 +10,7 @@
 <body>
 
  
-<form action="/Joker/ServletResgistro" method="post">
+<form action="/Joker/ServletResgistro" method="post" enctype="multipart/form-data">
   <div class="registt">
    <div class="Container">
    <header class="head-form">
@@ -34,6 +34,8 @@
       <br>
     
       <input class="campos" id="txt-input" type="password" placeholder="Password"   name="password">
+      <br>
+      <input  class="campos" type="file" name="fichero" value="" id="btn" >
       <br>
       <button class="btn submits registrar" value="Enviar"> Registratrse </button>
   

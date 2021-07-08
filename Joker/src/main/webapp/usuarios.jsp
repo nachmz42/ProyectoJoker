@@ -8,20 +8,32 @@
 <link rel="stylesheet" href="STYLE/css/usuario.css"></link>
 </head>
 <%HttpSession sesion= request.getSession(); %>
-<body>
-<div class="encabezado">
-<div class="home"><a style="text-decoration:none; color:black" href="index.jsp">Home</a></div>
-<div class="logout"><a style="text-decoration:none; color:black" href="Logout">Logout</a></div>
-<div class="admin"><%= sesion.getAttribute("nombre") %></div>
-<div class="admin1"><%= sesion.getAttribute("apellidos") %></div>
+<body class="wrapper">
 
-</div>
-<div class="cuerpo">
- <div class="user1"><a style="text-decoration:none; color:black"  href="categorias.jsp">CATEGORÍAS</a></div>
-<div class="user2"><a style="text-decoration:none; color:black"  href="random.jsp">RANDOM QUIZ</a></div>
-<div class="user3"><a style="text-decoration:none; color:black" href="ranking.jsp">RANKING</a></div>
-<div class="user4"><a style="text-decoration:none; color:black" href="sugerencias.jsp">SUGERENCIAS</a></div>
-</div>
+    <header>
+        <button class="home"><a   href="index.jsp">Home</a></button></b>
+        <button class="logout"><a href="Logout">Logout</a></button>
+        <nav >
 
-</body>
+<%  if(sesion.getAttribute("img")!=null){ %>
+<div class="admin"><img class= "fotoPerfil" src="imagen"> </div>
+<%} else{ %>
+        <div class="admin"><%= sesion.getAttribute("nombre")%> <%= sesion.getAttribute("apellidos") %></div>
+        <%}%>
+        </nav>
+    
+    </header>
+    
+   
+       
+
+    <div class= "container">
+        <div class="left"><a href="categorias.jsp">CATEGORÍAS</a></div>
+        <div class="right"><a href="random.jsp">RANDOM QUIZ</a></div>
+        <div class="left"><a  href="ranking.jsp">RANKING</a></div>
+        <div class="right"><a  href="sugerencias.jsp">SUGERENCIAS</a></div>
+    </div>
+
+    <div class="footer"><a href="#">BACK TO TOP</a></div>
+
 </html>
