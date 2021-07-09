@@ -53,7 +53,7 @@
       <li id="home"><a href="index.jsp">Home</a>
          
       </li>
-      <li id="aboutus"><a href="#">About Us</a></li>
+      <li id="aboutus"><a href="aboutus.jsp">About Us</a></li>
       <li id="login"><a href="login.jsp">Login</a></li>
       <li id="registro"><a href="registro.jsp">Registro</a></li>
     </ul>

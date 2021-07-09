@@ -18,35 +18,30 @@
     
     </header>
 
-
-<div class= "cuerpo">
-<div class= "testbox">
-
-	
-	<h1>Alta usuario</h1>
-  	<form action="/Joker/ServletAltausuario" method="post"><br>
-  
+	<div class="container">
+  	<form class="formulario" action="/Joker/ServletAltausuario" method="post">
+        <h1>Alta usuario</h1>
   	<div class="form2" >
-    <label for="nombre" id="1">Nombre</label><br>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre ..."  required><br>
+    <label for="nombre" id="id1">Nombre</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre ..."  required><br>
    
-    <label for="apellidos"  >Apellidos</label><br>
-    <input type="text" id="apellidos" name="apellidos" placeholder="Tus Apellidos ..." required><br>
+    <label for="apellidos" id="id1">Apellidos</label><br>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos ..." required><br>
    
 
-    <label for="edad" id="1">Edad</label><br>
-    <input type="text" id="edad" name="edad" placeholder="Tu edad ..."  required  ><br>
+    <label for="edad" id="id1">Edad</label><br>
+    <input type="text" id="edad" name="edad" placeholder="Edad ..."  required  ><br>
     
     
-    <label for="email" id="1">Email</label><br>
+    <label for="email" id="id1">Email</label><br>
     <input type="email" id="email" name="email" placeholder="Email ..."  required>
      <i class="icon-user"></i><br>
     
     
-    <label for="password" id="1" >Password</label><br>
+    <label for="password" id="id1" >Password</label><br>
     <input type="text" id="password" name="password" placeholder="Password ..."  required>  <br>
   
-    <label for="rol" id="1" >Rol</label><br>
+    <label for="rol" id="id1" >Rol</label><br>
     <input type="text" id="rol" name="rol" placeholder="Admin/invitado"  required  >  <br>
    
   
@@ -54,8 +49,6 @@
     <input type="reset" value="Borrar"><br>
    </div>
   </form>
-   
-</div>
 </div>
 
 

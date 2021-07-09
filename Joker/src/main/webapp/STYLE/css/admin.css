@@ -55,9 +55,9 @@
   }
 
 a{
-	color: bold #3dab82;
+	color: rgb(89, 163, 151);
 	font-family: 'Righteous', serif;
-	font-size: 20px; 	
+	font-size: 28px; 	
 }
 
 a:link{
@@ -65,7 +65,7 @@ a:link{
 }
 
 a:hover{
-	color:#f99b9d;
+	color:#ffffff;
 }
 
 
@@ -116,7 +116,6 @@ background-color: #E8F6F3;
     text-align: center;
   }
   .admin2 {
-	font-size: 25px; 
 	border-radius: 20px;
 	background-color: #FEF5E7; 
 }

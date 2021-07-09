@@ -76,9 +76,9 @@ background-color: #FEF5E7;
   margin-bottom: 2%
 }
 a{
-	color: bold #3dab82;
+	color: rgb(89, 163, 151);
 	font-family: 'Righteous', serif;
-	font-size: 20px; 	
+	font-size: 30px; 	
 }
 
 a:link{
@@ -86,7 +86,7 @@ a:link{
 }
 
 a:hover{
-	color:#f99b9d;
+	color:#ffffff;
 }
 
 .admin{ 
@@ -101,7 +101,8 @@ a:hover{
 background-color: #FEF5E7;
   text-align: center;
   overflow:hidden;
-
+  width: 200px;
+    height: 200px;
 }
 
 
@@ -141,5 +142,7 @@ button{
     margin-left: -5px;
     width: 200px;
     height: 200px;
-    border-radius: 100%;
+    padding-top: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }

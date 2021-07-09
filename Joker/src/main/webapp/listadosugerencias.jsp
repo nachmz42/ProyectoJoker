@@ -8,44 +8,21 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<style>
-table {
-	width: 100%;
-	border: 1px solid #000;
-}
 
-th, td {
-	width: 25%;
-	text-align: justify;
-	vertical-align: 20px;
-	border: 1px solid #000;
-	border-collapse: collapse;
-	padding: 0.3em;
-	caption-side: bottom;
-}
-
-caption {
-	font: Arial;
-	font-size: 40px;
-	margin-top: collapse;
-	padding: 0.3em;
-	color: #fff;
-	background: #000;
-}
-
-th {
-	background: #eee;
-}
-</style>
 <link rel="stylesheet" href="STYLE/css/tabla.css"></link>
 </head>
-<body>
+<body class="wrapper">
 
-	<div class="encabezado">
-	<div class="home"><a style="text-decoration: none; color: black" href="admin.jsp">Home</a></div>
-	<div class="logout"><a style="text-decoration: none; color: black" href="Logout">Logout</a></div>
-	<div class="admin">AD</div>
-	</div>
+    <header>
+        <button class="home"><a   href="index.jsp">Home</a></button></b>
+        <button class="logout"><a href="Logout">Logout</a></button>
+        <nav class="encabezado">
+            <div class="admin">ADMIN</div>
+        </nav>
+    
+    </header>
+    
+    <div class="container">
 	<table>
 		<caption>
 			<b> Lista de sugerencias </b>
@@ -83,6 +60,7 @@ th {
 			<%  } rs.close();%>
 		</tr>
 		</table>
+		</div>	
 
 </body>
 </html>

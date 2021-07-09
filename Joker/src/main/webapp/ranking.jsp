@@ -10,48 +10,20 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Ranking</title>
-<style>
-table {
-	width: 100%;
-	border: 1px solid #000;
-}
-
-th, td {
-	width: 25%;
-	text-align: justify;
-	vertical-align: 20px;
-	border: 1px solid #000;
-	border-collapse: collapse;
-	padding: 0.3em;
-	caption-side: bottom;
-}
-
-caption {
-	font: Arial;
-	font-size: 20px;
-	margin-top: collapse;
-	padding: 0.3em;
-	color: #F93208 ;
-	background: #FDEDEC;
-}
-
-th {
-	background: #eee;
-}
-</style>
-<link rel="stylesheet" href="STYLE/css/ranking.css"></link>
 </head>
-<body>
-<div class ="encabezado">
-<header>
-		<nav>
-			<div class="home"><a href="usuarios.jsp" style="text-decoration:none; color:black" >Home</a></div>
-			  <div class="logout"><a href="Logout" style="text-decoration:none; color:black">Exit</a></div>
-		</nav>
+<link rel="stylesheet" href="STYLE/css/ranking.css"></link>
 
-		<h1 class="titulo">Ranking</h1>
-	</header>
-	</div>
+<body class="wrapper">
+
+    <header>
+        <button class="home"><a   href="index.jsp">Home</a></button></b>
+        <button class="logout"><a href="Logout">Logout</a></button>
+        <nav class="encabezado">
+            <div class="admin">ADMIN</div>
+        </nav>
+    
+    </header>
+    <div class="container">
 <%
 Connection con = Conexion.getInstance().getConnection();
 String sql="Select * from ranking where  categoria = 'Cultura General'  order by puntuacion desc , tiempo desc" ;
@@ -153,7 +125,7 @@ int ir = 1;
 	<% ir++; }%>
 </table>
 
-
+</div>
 
 </body>
 </html>

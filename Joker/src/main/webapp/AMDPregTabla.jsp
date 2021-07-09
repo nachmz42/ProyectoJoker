@@ -9,46 +9,22 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tabla De Preguntas</title>
-<style>
-table {
-	width: 100%;
-	border: 1px solid #000;
-}
 
-th, td {
-	width: 25%;
-	text-align: justify;
-	vertical-align: 20px;
-	border: 1px solid #000;
-	border-collapse: collapse;
-	padding: 0.3em;
-	caption-side: bottom;
-}
-
-caption {
-	font: Arial;
-	font-size: 40px;
-	margin-top: collapse;
-	padding: 0.3em;
-	color: #fff;
-	background: #000;
-}
-
-th {
-	background: #eee;
-}
-</style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="STYLE/css/tabla.css"></link>
 </head>
-<body>
+<body class="wrapper">
 
-	<div class="encabezado">
-	<div class="home"><a style="text-decoration: none; color: black" href="admin.jsp">Home</a></div>
-	<div class="logout"><a style="text-decoration: none; color: black" href="Logout">Logout</a></div>
-	<div class="añadirpregunta"><a style="text-decoration: none; color: black" href="formAddPreg.html">Añadir Pregunta</a></div>
-	<div class="admin">AD</div>
-	</div>
+    <header>
+        <button class="home"><a   href="index.jsp">Home</a></button></b>
+        <button class="logout"><a href="Logout">Logout</a></button>
+        <nav class="encabezado">
+            <div class="admin">ADMIN</div>
+        </nav>
+    
+    </header>
+    
+    <div class="container">
 	<table>
 		<caption>
 			<b> Lista de preguntas Cultura General </b>
@@ -58,9 +34,6 @@ th {
 		String sql = "SELECT * FROM categoria_cultura order by  pregunta asc";
 		Statement st = con.createStatement();
 		ResultSet rscult = st.executeQuery(sql);
-		
-		
-		
 		
 			
 	%>
@@ -95,7 +68,7 @@ th {
 
 		<%  } rscult.close();%>
 		</table>
-		
+	
 		<table>
 		<caption>
 			<b> Lista de preguntas Matemáticas </b>
@@ -126,6 +99,8 @@ th {
 		</tr>
 		<%} rsmath.close();%>
 		</table>
+	
+		
 		<table>
 		<caption>
 			<b> Lista de preguntas Programación </b>
@@ -153,6 +128,6 @@ th {
 		<%} rsprog.close(); %>
 	</table>
 
-
+</div>
 </body>
 </html>
