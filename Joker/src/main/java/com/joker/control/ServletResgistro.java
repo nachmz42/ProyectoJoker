@@ -41,13 +41,19 @@ public class ServletResgistro extends HttpServlet {
 		String edad= request.getParameter("edad");
 		
 		Part filePart = request.getPart("fichero");
-		
+		Long size = filePart.getSize();
+		System.out.println(size);
 		int edadNum= Integer.parseInt(edad);
 		InputStream img = filePart.getInputStream();
 		
-		
+		Usuario usu;
 		//Creamos el objeto Usuario con los dstos recuperados del formulario
-		Usuario usu= new Usuario(nombre,apellidos,edadNum,email,password,rol,img);
+		if(size==0) {
+			usu= new Usuario(nombre,apellidos,edadNum,email,password,rol);
+		}else {
+			usu= new Usuario(nombre,apellidos,edadNum,email,password,rol,img);
+		}
+		
 		
 		UsuarioDAO usudao= new UsuarioDAO();
 		

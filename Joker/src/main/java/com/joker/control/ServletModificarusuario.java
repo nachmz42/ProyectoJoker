@@ -77,7 +77,7 @@ public class ServletModificarusuario extends HttpServlet {
 			request.getSession().setAttribute("Mensaje", "Error, usuario no se ha podido modificar");
 			
 		}
-		response.sendRedirect("admin.jsp");
+		response.sendRedirect("listado.jsp");
 		
 		
 }

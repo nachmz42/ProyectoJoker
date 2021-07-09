@@ -37,33 +37,33 @@
 				<input type="email"
 					id="email" name="email"
 					placeholder="Email del usuario que desea modificar" required
-					value = <%= (u == null) ? "" : u.getEmail() %>> 
+					value = '<%= (u == null) ? "" : u.getEmail() %>'> 
 					<i class="icon-user" ></i><br> 
 					
 				<label for="password" id="id1">Password</label><br>
 				<input type="text" id="password" name="password"  required placeholder="Password ..."
-				value = <%= (u == null) ? "" : u.getPass() %>
+				value = '<%= (u == null) ? "" : u.getPass() %>'
 				> <br> <label
 					for="nombre" id="id1">Nombre</label><br> 
 					
 				<input type="text"
 					id="nombre" name="nombre" placeholder="Tu Nombre ..." required
-					value = <%= (u == null) ? "" : u.getNombre() %>><br>
+					value = '<%= (u == null) ? "" : u.getNombre() %>'><br>
 
 				<label for="apellidos" id="id1">Apellidos</label><br> 
 				<input
 					type="text" id="apellidos" name="apellidos"
-					placeholder="Tus Apellidos ..." required value = <%= (u == null) ? "" : u.getApellidos() %>><br> <label
+					placeholder="Tus Apellidos ..." required value = '<%= (u == null) ? "" : u.getApellidos() %>'><br> <label
 					for="edad" id="1">Edad</label><br> 
 					
 				<input type="text"
-					id="edad" name="edad" placeholder="Tu edad ..." required value = <%= (u == null) ? "" : u.getEdad() %>><br>
+					id="edad" name="edad" placeholder="Tu edad ..." required value = '<%= (u == null) ? "" : u.getEdad() %>'><br>
 
 				 <label for="rol" id="id1">
 					Rol</label><br>
 					 <input type="text" id="rol"
 					name="rol" placeholder="Admin/invitado" required
-					value = <%= (u == null) ? "" : u.getRol() %> > <br>
+					value = '<%= (u == null) ? "" : u.getRol() %>' > <br>
 
 
 				<input type="submit" value="Enviar"><br>
