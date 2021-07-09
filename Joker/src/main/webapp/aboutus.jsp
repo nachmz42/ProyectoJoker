@@ -34,7 +34,7 @@
     <h1>Bienvenido a GAMES!</h1>
     <p>GAMES es el resultado del trabjo de tres jóvenes desarrolladores juniors.</p>
       <p> Junior Nº 1: Nacho. El es el cabecilla del BackEnd. Nació para brillar en el mundo de la programación. </p>
-      <p> Junior Nº 2: Juan. Apasionado de las BBDDs y el unico junior en la faz de la tierra que utiliza el Exlipse en modo light.<br> También es un Pro del BackEnd.</p>
+      <p> Junior Nº 2: Juan. Apasionado de las BBDDs y el unico junior en la faz de la tierra que utiliza el Eclipse en modo light.<br> También es un Pro del BackEnd.</p>
       <p> Junior Nº 3: Mariam. Encargada de darle color y animación al código AKA una FrontEnd a muerte. </p>
 </div>
 

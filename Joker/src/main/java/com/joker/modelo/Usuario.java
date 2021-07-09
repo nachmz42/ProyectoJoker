@@ -26,14 +26,14 @@ public class Usuario {
 		this.edad = edad;
 		this.email = email;
 		this.pass = pass;
-		this.rol = "invitado";
+		this.rol = rol;
 		this.img = img;
 	}
 
 	public Usuario() {
 
 		super();
-		this.rol = "invitado";
+		
 
 	}
 
@@ -51,7 +51,7 @@ public class Usuario {
 
 		this.pass = pass;
 
-		this.rol = "invitado";
+		this.rol = rol;
 
 	}
 	
